@@ -21,7 +21,7 @@ The `golang` binary distributions expect to be installed to the standard locatio
 export GOROOT=/usr/local/opt/go/libexec
 ```
 
-See https://golang.org/doc/install#tarball_non_standard for more information on `GOROOT`.
+See [https://golang.org/doc/install#tarball_non_standard](https://golang.org/doc/install#tarball_non_standard) for more information on `GOROOT`.
 
 #### Setting GOPATH
 
@@ -37,7 +37,7 @@ Next, set the `GOPATH` environment variable. This will point to the root directo
 export GOPATH=$DEVELOPMENT_HOME/golang
 ```
 
-See https://golang.org/cmd/go/#hdr-GOPATH_environment_variable for information on `GOPATH`.
+See [https://golang.org/cmd/go/#hdr-GOPATH_environment_variable](https://golang.org/cmd/go/#hdr-GOPATH_environment_variable) for information on `GOPATH`.
 
 #### Appending GOPATH to PATH
 
@@ -62,4 +62,4 @@ $ $GOPATH/bin/hello
 Hello, Go examples!
 ```
 
-See https://golang.org/doc/code.html#remote for more information.
+See [https://golang.org/doc/code.html#remote](https://golang.org/doc/code.html#remote) for more information.
