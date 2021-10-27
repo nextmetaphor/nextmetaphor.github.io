@@ -1680,13 +1680,13 @@
 </script>
 
 <script>
-    serviceCapabilityMap.get("networking").CategoryMap.set("virtual-network", {
-        Name: "virtual network",
-        Description: "Virtual Network",
+    serviceCapabilityMap.get("networking").CategoryMap.set("private-network", {
+        Name: "private network",
+        Description: "Private Network",
         SubcategoryMap: new Map(),
     })
 </script><script>
-    serviceCapabilityMap.get("networking").CategoryMap.get("virtual-network").SubcategoryMap.set("virtual-network", {
+    serviceCapabilityMap.get("networking").CategoryMap.get("private-network").SubcategoryMap.set("virtual-network", {
         Name: "virtual network",
         Description: "Virtual Network",
         ServiceByTenancyMap: new Map()
@@ -1720,7 +1720,7 @@
     })
 
 
-    serviceCapabilityMap.get("networking").CategoryMap.get("virtual-network").SubcategoryMap.get("virtual-network").ServiceByTenancyMap.set("azure", {
+    serviceCapabilityMap.get("networking").CategoryMap.get("private-network").SubcategoryMap.get("virtual-network").ServiceByTenancyMap.set("azure", {
         ServiceConfigurationID: "azure-virtual-network-default"
     });
 </script>
@@ -1737,7 +1737,7 @@
     })
 
     serviceMap.set("aws-vpc", {
-        Name: "Amazon Virtual Private Cloud (VPC)",
+        Name: "Amazon VPC",
         Description: "Define and launch AWS resources in a logically isolated virtual network",
         Link: "https://aws.amazon.com/vpc/",
         ImgSrc: "svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDY0ICg5MzUzNykgLSBodHRwczovL3NrZXRjaC5jb20gLS0+CiAgICA8dGl0bGU+SWNvbi1BcmNoaXRlY3R1cmUvMTYvQXJjaF9BbWF6b24tVmlydHVhbC1Qcml2YXRlLUNsb3VkXzE2PC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IHgxPSIwJSIgeTE9IjEwMCUiIHgyPSIxMDAlIiB5Mj0iMCUiIGlkPSJsaW5lYXJHcmFkaWVudC0xIj4KICAgICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzREMjdBOCIgb2Zmc2V0PSIwJSI+PC9zdG9wPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjQTE2NkZGIiBvZmZzZXQ9IjEwMCUiPjwvc3RvcD4KICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPC9kZWZzPgogICAgPGcgaWQ9Ikljb24tQXJjaGl0ZWN0dXJlLzE2L0FyY2hfQW1hem9uLVZpcnR1YWwtUHJpdmF0ZS1DbG91ZF8xNiIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9Ikljb24tQXJjaGl0ZWN0dXJlLUJHLzE2L05ldHdvcmtpbmctQ29udGVudC1EZWxpdmVyeSIgZmlsbD0idXJsKCNsaW5lYXJHcmFkaWVudC0xKSI+CiAgICAgICAgICAgIDxyZWN0IGlkPSJSZWN0YW5nbGUiIHg9IjAiIHk9IjAiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PC9yZWN0PgogICAgICAgIDwvZz4KICAgICAgICA8cGF0aCBkPSJNMTYuOTk3LDExLjgyMTA3NDMgTDE1LjA3NCwxMC44MDMwNzQzIEwxNS4wNzQsMTguNDYxMDc0MyBDMTYuOTU4LDE4LjA4MzA3NDMgMTYuOTk2LDE1LjYzMjA3NDMgMTYuOTk3LDE1LjUxOTA3NDMgTDE2Ljk5NywxMS44MjEwNzQzIFogTTEyLjg1MSwxNy44NzUwNzQzIEMxMy4xNzgsMTguMjAyMDc0MyAxMy41ODEsMTguNDAwMDc0MyAxNC4wNzQsMTguNDc3MDc0MyBMMTQuMDc0LDEwLjc4MjA3NDMgTDExLjk4MSwxMS44MjkwNzQzIEwxMS45ODEsMTUuNTIwMDc0MyBDMTEuOTgxLDE1LjUzNzA3NDMgMTEuOTg4LDE3LjAxMDA3NDMgMTIuODUxLDE3Ljg3NTA3NDMgTDEyLjg1MSwxNy44NzUwNzQzIFogTTE3Ljk5NywxMS41MjAwNzQzIEwxNy45OTcsMTUuNTIwMDc0MyBDMTcuOTk3LDE2LjkwMjA3NDMgMTcuMjgsMTkuNTE0MDc0MyAxNC41NjcsMTkuNTE0MDc0MyBDMTMuNTczLDE5LjUxNDA3NDMgMTIuNzU2LDE5LjE5OTA3NDMgMTIuMTM4LDE4LjU3NjA3NDMgQzEwLjk4MDk0NiwxNy40MTEwNzQzIDEwLjk4LDE1LjU5MzA3NDMgMTAuOTgwOTQ2LDE1LjUxNjA3NDMgTDEwLjk4MDk0NiwxMS41MjAwNzQzIEMxMC45ODA5NDYsMTEuMzMwMDc0MyAxMS4wODksMTEuMTU3MDc0MyAxMS4yNTgsMTEuMDcyMDc0MyBMMTQuMzUxLDkuNTI2MDc0MzIgQzE0LjQ5NSw5LjQ1MzA3NDMyIDE0LjY2Nyw5LjQ1NjA3NDMyIDE0LjgwOCw5LjUzMTA3NDMyIEwxNy43MywxMS4wNzgwNzQzIEMxNy44OTQsMTEuMTY0MDc0MyAxNy45OTcsMTEuMzM1MDc0MyAxNy45OTcsMTEuNTIwMDc0MyBMMTcuOTk3LDExLjUyMDA3NDMgWiBNMTkuNjksOS43MzUwNzQzMiBMMTguNzUzLDEwLjA4MTA3NDMgQzE4LjU0Nyw5LjUyNDA3NDMyIDE4LjE5OSw5LjI5NjA3NDMyIDE3LjU1NSw5LjI5NjA3NDMyIEMxNy4yOSw5LjI5NjA3NDMyIDE3LjA3MSw5LjA5MDA3NDMyIDE3LjA1Niw4LjgyNjA3NDMyIEMxNi45ODYsNy42NjMwNzQzMiAxNi4zODksNy4xMDYwNzQzMiAxNS44NjIsNy4wNzkwNzQzMiBDMTUuMTg5LDcuMDQ4MDc0MzIgMTQuOTY4LDcuMzM2MDc0MzIgMTQuODk0LDcuNDMxMDc0MzIgQzE0Ljc4Myw3LjU3NzA3NDMyIDE0LjYsNy42NDkwNzQzMiAxNC40MjIsNy42MjQwNzQzMiBDMTQuMjQxLDcuNTk2MDc0MzIgMTQuMDg5LDcuNDczMDc0MzIgMTQuMDI2LDcuMzAxMDc0MzIgQzEzLjgxMSw2LjcxMzA3NDMyIDEzLjUwOSw2LjI0MjA3NDMyIDEzLjA3Niw1LjgyMDA3NDMyIEMxMi4xNDQsNC45MTgwNzQzMiAxMC40MDcsNC43MzEwNzQzMiA4Ljg1MSw1LjM2OTA3NDMyIEM3Ljc4OSw1LjgwNDA3NDMyIDcuMTAyLDYuOTI3MDc0MzIgNy4xMDIsOC4yMzAwNzQzMiBDNy4xMDIsOC4zNzQwNzQzMiA3LjEyMSw4LjU5ODA3NDMyIDcuMTM4LDguNzM3MDc0MzIgQzcuMTY4LDguOTg3MDc0MzIgNy4wMDcsOS4yMjAwNzQzMiA2Ljc2Miw5LjI4MTA3NDMyIEM1LjU3Niw5LjU3NTA3NDMyIDUsMTAuMjU1MDc0MyA1LDExLjM1NzA3NDMgQzUsMTEuNDA3MDc0MyA0Ljk5OSwxMS40NTgwNzQzIDUuMDA0LDExLjUwODA3NDMgQzUuMDYxLDEyLjUxNzA3NDMgNS42MTMsMTMuNTc3MDc0MyA2Ljk5NSwxMy41NzcwNzQzIEw4Ljk5NywxMy41NzcwNzQzIEw4Ljk5NywxNC41NzcwNzQzIEw2Ljk5NSwxNC41NzcwNzQzIEM1LjMwOSwxNC41NzcwNzQzIDQuMTA3LDEzLjM3MzA3NDMgNC4wMDcsMTEuNTgxMDc0MyBDNC4wMDEsMTEuNTE3MDc0MyA0LDExLjQzNzA3NDMgNCwxMS4zNTcwNzQzIEM0LDkuOTMzMDc0MzIgNC43NDUsOC45MDgwNzQzMiA2LjEwOSw4LjQzMzA3NDMyIEM2LjEwNSw4LjM2MDA3NDMyIDYuMTAyLDguMjg5MDc0MzIgNi4xMDIsOC4yMzAwNzQzMiBDNi4xMDIsNi41MTkwNzQzMiA3LjAzMyw1LjAzMzA3NDMyIDguNDczLDQuNDQzMDc0MzIgQzEwLjM4NiwzLjY2MjA3NDMyIDEyLjU2NCwzLjkzMzA3NDMyIDEzLjc3Miw1LjEwMjA3NDMyIEMxNC4xNDUsNS40NjYwNzQzMiAxNC40NDcsNS44NjkwNzQzMiAxNC42ODYsNi4zMjMwNzQzMiBDMTQuOTg2LDYuMTYxMDc0MzIgMTUuMzgyLDYuMDUxMDc0MzIgMTUuOTEzLDYuMDgwMDc0MzIgQzE2Ljk2OCw2LjEzNDA3NDMyIDE3Ljc4Niw3LjAzNTA3NDMyIDE4LjAwNCw4LjMyODA3NDMyIEMxOC44MjQsOC40NDkwNzQzMiAxOS4zOSw4LjkyMTA3NDMyIDE5LjY5LDkuNzM1MDc0MzIgTDE5LjY5LDkuNzM1MDc0MzIgWiIgaWQ9IkFtYXpvbi1WaXJ0dWFsLVByaXZhdGUtQ2xvdWRfSWNvbl8xNl9TcXVpZCIgZmlsbD0iI0ZGRkZGRiI+PC9wYXRoPgogICAgPC9nPgo8L3N2Zz4=",
@@ -1756,8 +1756,220 @@
     })
 
 
-    serviceCapabilityMap.get("networking").CategoryMap.get("virtual-network").SubcategoryMap.get("virtual-network").ServiceByTenancyMap.set("aws", {
+    serviceCapabilityMap.get("networking").CategoryMap.get("private-network").SubcategoryMap.get("virtual-network").ServiceByTenancyMap.set("aws", {
         ServiceConfigurationID: "aws-vpc-default"
+    });
+</script>
+
+
+
+
+
+<script>
+    serviceCapabilityMap.get("networking").CategoryMap.get("private-network").SubcategoryMap.set("dedicated-network-connectivity", {
+        Name: "dedicated network connectivity",
+        Description: "Dedicated Network Connectivity",
+        ServiceByTenancyMap: new Map()
+    })
+</script><script>
+    serviceConfigurationMap.set("aws-direct-connect-default", {
+        Name:  null ,
+        Description:  null ,
+        Link:  null ,
+        ImgSrc:  null ,
+        ServiceID: "aws-direct-connect",
+    })
+
+    serviceMap.set("aws-direct-connect", {
+        Name: "AWS Direct Connect",
+        Description: "AWS Direct Connect is a cloud service that links your network directly to AWS, bypassing the internet to deliver more consistent, lower-latency performance.",
+        Link: "https://aws.amazon.com/directconnect/",
+        ImgSrc: "svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDY0ICg5MzUzNykgLSBodHRwczovL3NrZXRjaC5jb20gLS0+CiAgICA8dGl0bGU+SWNvbi1BcmNoaXRlY3R1cmUvMTYvQXJjaF9BV1MtRGlyZWN0LUNvbm5lY3RfMTY8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZGVmcz4KICAgICAgICA8bGluZWFyR3JhZGllbnQgeDE9IjAlIiB5MT0iMTAwJSIgeDI9IjEwMCUiIHkyPSIwJSIgaWQ9ImxpbmVhckdyYWRpZW50LTEiPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjNEQyN0E4IiBvZmZzZXQ9IjAlIj48L3N0b3A+CiAgICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiNBMTY2RkYiIG9mZnNldD0iMTAwJSI+PC9zdG9wPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8ZyBpZD0iSWNvbi1BcmNoaXRlY3R1cmUvMTYvQXJjaF9BV1MtRGlyZWN0LUNvbm5lY3RfMTYiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJJY29uLUFyY2hpdGVjdHVyZS1CRy8xNi9OZXR3b3JraW5nLUNvbnRlbnQtRGVsaXZlcnkiIGZpbGw9InVybCgjbGluZWFyR3JhZGllbnQtMSkiPgogICAgICAgICAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlIiB4PSIwIiB5PSIwIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiPjwvcmVjdD4KICAgICAgICA8L2c+CiAgICAgICAgPHBhdGggZD0iTTkuNTcxMjc3NDYsMTYuMzI5NjE0OCBMOS41NzEyNzc0NiwxNy44NjUwMzA5IEwxNC40Mjg3MjI1LDE3Ljg2NTAzMDkgTDE0LjQyODcyMjUsMTYuMzI5NjE0OCBDMTQuNDI4NzIyNSwxNi4zMDk1OTYzIDE0LjM3MDk3ODgsMTYuMjUxNTQyOCAxNC4yNjc0MzgyLDE2LjI1MTU0MjggTDkuNzMyNTYxNzYsMTYuMjUxNTQyOCBDOS42MjkwMjEyMiwxNi4yNTE1NDI4IDkuNTcxMjc3NDYsMTYuMzA5NTk2MyA5LjU3MTI3NzQ2LDE2LjMyOTYxNDggTTE2LjM5ODk3OTUsMTkuMDU3MTMwNCBMMTYuMzk4OTc5NSwyMCBMMTUuNDAzMzk3NCwyMCBMMTUuNDAzMzk3NCwxOS4wNTcxMzA0IEMxNS40MDMzOTc0LDE4Ljk0MDAyMjQgMTUuMzUwNjMxNiwxOC44NzI5NjA1IDE1LjMzMjcxMTEsMTguODYxOTUwNCBMOC42NDgzNzI4NSwxOC44NjU5NTQxIEM4LjY0OTM2ODQzLDE4Ljg3Mjk2MDUgOC41OTY2MDI1OCwxOC45NDAwMjI0IDguNTk2NjAyNTgsMTkuMDU3MTMwNCBMOC41OTY2MDI1OCwyMCBMNy42MDEwMjA0NywyMCBMNy42MDEwMjA0NywxOS4wNTcxMzA0IEM3LjYwMTAyMDQ3LDE4LjQyOTU1MTYgOC4wMzQwOTg2OSwxNy45MjcwODgxIDguNTc1Njk1MzUsMTcuODgyMDQ2NiBMOC41NzU2OTUzNSwxNi4zMjk2MTQ4IEM4LjU3NTY5NTM1LDE1Ljc5NDEyMDkgOS4wMDM3OTU2NiwxNS4zNjg3Mjg2IDkuNTUxMzY1ODEsMTUuMjg0NjUxIEw5LjU1MTM2NTgxLDExLjA1NTc1MDcgTDEwLjU0Njk0NzksMTEuMDU1NzUwNyBMMTAuNTQ2OTQ3OSwxNS4yNTA2MTk2IEwxMS41MDE3MTEyLDE1LjI1MDYxOTYgTDExLjUwMTcxMTIsOC43Njg2NDEyOSBMMTIuNDk3MjkzMyw4Ljc2ODY0MTI5IEwxMi40OTcyOTMzLDE1LjI1MDYxOTYgTDEzLjQ1MjA1NjUsMTUuMjUwNjE5NiBMMTMuNDUyMDU2NSwxMS4wNTU3NTA3IEwxNC40NDc2Mzg2LDExLjA1NTc1MDcgTDE0LjQ0NzYzODYsMTUuMjg0NjUxIEMxNC45OTYyMDQzLDE1LjM2ODcyODYgMTUuNDI0MzA0NiwxNS43OTQxMjA5IDE1LjQyNDMwNDYsMTYuMzI5NjE0OCBMMTUuNDI0MzA0NiwxNy44ODIwNDY2IEMxNS45NjU5MDEzLDE3LjkyNzA4ODEgMTYuMzk4OTc5NSwxOC40Mjk1NTE2IDE2LjM5ODk3OTUsMTkuMDU3MTMwNCBNMjAsMTEuMTgzODY4OSBDMjAsMTMuMDc4NjE2NCAxOC44ODQ5NDgsMTQuMDM5NTAyNiAxNi42ODg2OTM5LDE0LjAzOTUwMjYgTDE1LjMxOTc2ODUsMTQuMDM5NTAyNiBMMTUuMzE5NzY4NSwxMy4wMzg1Nzk1IEwxNi42ODg2OTM5LDEzLjAzODU3OTUgQzE4LjMzMzM5NTYsMTMuMDM4NTc5NSAxOS4wMDQ0MTc5LDEyLjUwMTA4MzcgMTkuMDA0NDE3OSwxMS4xODM4Njg5IEMxOS4wMDQ0MTc5LDEwLjAyMzc5ODkgMTguMzE4NDYxOCw5LjI5ODEyOTY0IDE2Ljk2NTQ2NTcsOS4wMjU4Nzg1NCBDMTYuNzQzNDUwOSw4Ljk4MDgzNyAxNi41ODAxNzU1LDguNzkxNjYyNTIgMTYuNTY2MjM3Myw4LjU2NDQ1Mjk2IEMxNi41MDI1MjAxLDcuNDY3NDQxMTkgMTUuODkwMjM3MSw3LjA3NzA4MTE2IDE1LjM4NTQ3NjksNy4wNzcwODExNiBDMTUuMDQ3OTc0Niw3LjA3NzA4MTE2IDE0LjczMTM3OTUsNy4yNDAyMzE2MyAxNC41MTUzMzgyLDcuNTI0NDkzODEgQzE0LjQwMzgzMyw3LjY2OTYyNzY2IDE0LjIyMzYzMjYsNy43Mzk2OTIyOCAxNC4wNDU0MjM0LDcuNzE2NjcxMDUgQzEzLjg2NTIyMzEsNy42ODg2NDUyIDEzLjcxNDg5MDIsNy41NjU1MzE2NiAxMy42NTMxNjQxLDcuMzk0MzczOCBDMTMuNDYzMDA3OSw2Ljg3Nzg5NzQ1IDEzLjE3NTI4NDcsNi40NTA1MDMyNiAxMi43MTkzMDgxLDYuMDA3MDk0MyBDMTIuMjI3NDkwNSw1LjUyNjY1MTE5IDEwLjg4MTQ2MzUsNC40OTU3MDAzNCA4Ljk3NDkyMzc4LDUuMjgwNDI0MDkgQzcuODY2ODQwODksNS43MzY4NDUwNSA3LjAzMDU1MTkzLDYuOTU3OTcxMyA3LjAzMDU1MTkzLDguMTIwMDQzMDggQzcuMDMwNTUxOTMsOC4yNTYxNjg2MyA3LjAzOTUxMjE2LDguMzg5MjkxNDEgNy4wNTU0NDE0OCw4LjUyMDQxMjM0IEM3LjA4NjMwNDUyLDguNzcyNjQ0OTggNi45MjUwMjAyMiw5LjAwNzg2MTkyIDYuNjgwMTA3MDMsOS4wNjc5MTczMSBDNi4wNTA4OTkxNCw5LjIyMjA1OTQ4IDQuOTk1NTgyMSw5LjY5OTQ5OTgyIDQuOTk1NTgyMSwxMS4xNjE4NDg1IEw1LjAwMDU2MDAxLDExLjMyNDk5OSBDNS4wNjgyNTk2LDEyLjUwODA5MDIgNi4xODYyOTgzLDEzLjAzODU3OTUgNy4yNjQ1MTM3MiwxMy4wMzg1Nzk1IEw4LjY4MTIyNzA1LDEzLjAzODU3OTUgTDguNjgxMjI3MDUsMTQuMDM5NTAyNiBMNy4yNjQ1MTM3MiwxNC4wMzk1MDI2IEM1LjQzNDYzMzgxLDE0LjAzOTUwMjYgNC4wOTU1NzU4OCwxMi45NDU0OTM2IDQuMDA2OTY5MDcsMTEuMzc5MDQ4OSBMNCwxMS4xNjE4NDg1IEM0LDkuNzYwNTU2MTMgNC43NTI2NjAwNyw4LjY4NTU2NDY3IDYuMDM1OTY1NCw4LjIxODEzMzU1IEM2LjAzNDk2OTgyLDguMTg2MTA0MDEgNi4wMzQ5Njk4Miw4LjE1MzA3MzU1IDYuMDM0OTY5ODIsOC4xMjAwNDMwOCBDNi4wMzQ5Njk4Miw2LjU0OTU5NDY1IDcuMTEzMTg1MjQsNC45NjUxMzMzIDguNTk3NTk4MTYsNC4zNTQ1NzAxOCBDMTAuMjk4MDUyNCwzLjY1NDkyNDg5IDEyLjA5ODA2NDgsNC4wMDMyNDYxNSAxMy40MTIyMzMyLDUuMjg4NDMxNDggQzEzLjc4MzU4NTMsNS42NDk3NjQ3NCAxNC4wNjgzMjE4LDYuMDA3MDk0MyAxNC4yODczNDk5LDYuMzk2NDUzNDEgQzE0LjYxMzkwMDgsNi4xODkyNjIzMiAxNC45OTEyMjY0LDYuMDc2MTU4IDE1LjM4NTQ3NjksNi4wNzYxNTggQzE2LjI4NzQ3NDMsNi4wNzYxNTggMTcuMjkxMDIxMSw2LjcyMTc1MzQ0IDE3LjUxOTAwOTQsOC4xMjkwNTEzOSBDMTkuMTIyODkyMiw4LjU2NTQ1Mzg5IDIwLDkuNjM5NDQ0NDMgMjAsMTEuMTgzODY4OSIgaWQ9IkFXUy1EaXJlY3QtQ29ubmVjdF9JY29uXzE2X1NxdWlkIiBmaWxsPSIjRkZGRkZGIj48L3BhdGg+CiAgICA8L2c+Cjwvc3ZnPg==",
+        ProviderID: "aws",
+        TenancyID: "managed",
+    })
+
+    serviceProviderMap.set("aws", {
+        Name: "AWS",
+    })
+
+    serviceTenancyMap.set("managed", {
+        Name: "Managed",
+        BackgroundColour: "SlateBlue",
+        FontColour: "White",
+    })
+
+
+    serviceCapabilityMap.get("networking").CategoryMap.get("private-network").SubcategoryMap.get("dedicated-network-connectivity").ServiceByTenancyMap.set("aws", {
+        ServiceConfigurationID: "aws-direct-connect-default"
+    });
+</script>
+
+
+
+
+
+<script>
+    serviceCapabilityMap.get("networking").CategoryMap.get("private-network").SubcategoryMap.set("vpn-network-connectivity", {
+        Name: "vpn network connectivity",
+        Description: "VPN Network Connectivity",
+        ServiceByTenancyMap: new Map()
+    })
+</script><script>
+    serviceConfigurationMap.set("azure-vpn-gateway-default", {
+        Name:  null ,
+        Description:  null ,
+        Link:  null ,
+        ImgSrc:  null ,
+        ServiceID: "azure-vpn-gateway",
+    })
+
+    serviceMap.set("azure-vpn-gateway", {
+        Name: "VPN Gateway",
+        Description: "Azure VPN Gateway",
+        Link: "https://azure.microsoft.com/en-gb/services/vpn-gateway/",
+        ImgSrc:  null ,
+        ProviderID: "azure",
+        TenancyID: "managed",
+    })
+
+    serviceProviderMap.set("azure", {
+        Name: "Azure",
+    })
+
+    serviceTenancyMap.set("managed", {
+        Name: "Managed",
+        BackgroundColour: "SlateBlue",
+        FontColour: "White",
+    })
+
+
+    serviceCapabilityMap.get("networking").CategoryMap.get("private-network").SubcategoryMap.get("vpn-network-connectivity").ServiceByTenancyMap.set("azure", {
+        ServiceConfigurationID: "azure-vpn-gateway-default"
+    });
+</script>
+
+
+
+<script>
+    serviceConfigurationMap.set("aws-site-to-site-vpn-default", {
+        Name:  null ,
+        Description:  null ,
+        Link:  null ,
+        ImgSrc:  null ,
+        ServiceID: "aws-site-to-site-vpn",
+    })
+
+    serviceMap.set("aws-site-to-site-vpn", {
+        Name: "AWS Site-to-Site VPN",
+        Description: "AWS Site-to-Site VPN is a fully-managed service that creates a secure connection between your data center or branch office and your AWS resources using IP Security (IPSec) tunnels.",
+        Link: "https://aws.amazon.com/vpn/site-to-site-vpn/",
+        ImgSrc: "svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8dGl0bGU+SWNvbi1BcmNoaXRlY3R1cmUvMTYvQXJjaF9BV1MtU2l0ZS10by1TaXRlLVZQTl8xNjwvdGl0bGU+CiAgICA8ZGVmcz4KICAgICAgICA8bGluZWFyR3JhZGllbnQgeDE9IjAlIiB5MT0iMTAwJSIgeDI9IjEwMCUiIHkyPSIwJSIgaWQ9ImxpbmVhckdyYWRpZW50LTEiPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjNEQyN0E4IiBvZmZzZXQ9IjAlIj48L3N0b3A+CiAgICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiNBMTY2RkYiIG9mZnNldD0iMTAwJSI+PC9zdG9wPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8ZyBpZD0iSWNvbi1BcmNoaXRlY3R1cmUvMTYvQXJjaF9BV1MtU2l0ZS10by1TaXRlLVZQTl8xNiIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9IlJlY3RhbmdsZSIgZmlsbD0idXJsKCNsaW5lYXJHcmFkaWVudC0xKSI+CiAgICAgICAgICAgIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PC9yZWN0PgogICAgICAgIDwvZz4KICAgICAgICA8ZyBpZD0iSWNvbi1TZXJ2aWNlLzE2L0FXUy1TaXRlLXRvLVNpdGUtVlBOXzE2IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0LjAwMDAwMCwgNC4wMDAwMDApIiBmaWxsPSIjRkZGRkZGIj4KICAgICAgICAgICAgPHBhdGggZD0iTTUuMDA3LDQgTDQuMDA3LDQgQzQuMDA3LDEuNzk0IDUuODAxLDAgOC4wMDcsMCBDMTAuMjEzLDAgMTIuMDA3LDEuNzk0IDEyLjAwNyw0IEwxMS4wMDcsNCBDMTEuMDA3LDIuMzQ2IDkuNjYxLDEgOC4wMDcsMSBDNi4zNTMsMSA1LjAwNywyLjM0NiA1LjAwNyw0IEw1LjAwNyw0IFogTTIuNjUzLDcuODU0IEwwLjMsNS41IEwyLjY1MywzLjE0NiBMMy4zNjEsMy44NTQgTDIuMjE0LDUgTDEzLjgsNSBMMTIuNjUzLDMuODU0IEwxMy4zNjEsMy4xNDYgTDE1LjcxNCw1LjUgTDEzLjM2MSw3Ljg1NCBMMTIuNjUzLDcuMTQ2IEwxMy44LDYgTDIuMjE0LDYgTDMuMzYxLDcuMTQ2IEwyLjY1Myw3Ljg1NCBaIE0zLjAwNywxNSBMMTMuMDA3LDE1IEwxMy4wMDcsMTAgTDMuMDA3LDEwIEwzLjAwNywxNSBaIE0xMy41MDcsOSBMMTIuMDA3LDkgTDEyLjAwNyw3IEwxMS4wMDcsNyBMMTEuMDA3LDkgTDUuMDA3LDkgTDUuMDA3LDcgTDQuMDA3LDcgTDQuMDA3LDkgTDIuNTA3LDkgQzIuMjMxLDkgMi4wMDcsOS4yMjQgMi4wMDcsOS41IEwyLjAwNywxNS41IEMyLjAwNywxNS43NzYgMi4yMzEsMTYgMi41MDcsMTYgTDEzLjUwNywxNiBDMTMuNzgzLDE2IDE0LjAwNywxNS43NzYgMTQuMDA3LDE1LjUgTDE0LjAwNyw5LjUgQzE0LjAwNyw5LjIyNCAxMy43ODMsOSAxMy41MDcsOSBMMTMuNTA3LDkgWiIgaWQ9IkFXUy1TaXRlLXRvLVNpdGUtVlBOXzE2X1NxdWlkIj48L3BhdGg+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=",
+        ProviderID: "aws",
+        TenancyID: "managed",
+    })
+
+    serviceProviderMap.set("aws", {
+        Name: "AWS",
+    })
+
+    serviceTenancyMap.set("managed", {
+        Name: "Managed",
+        BackgroundColour: "SlateBlue",
+        FontColour: "White",
+    })
+
+
+    serviceCapabilityMap.get("networking").CategoryMap.get("private-network").SubcategoryMap.get("vpn-network-connectivity").ServiceByTenancyMap.set("aws", {
+        ServiceConfigurationID: "aws-site-to-site-vpn-default"
+    });
+</script>
+
+
+
+
+
+<script>
+    serviceCapabilityMap.get("networking").CategoryMap.get("private-network").SubcategoryMap.set("point-to-point-network-peering", {
+        Name: "point-to-point network peering",
+        Description: "Point-to-Point Network Peering",
+        ServiceByTenancyMap: new Map()
+    })
+</script><script>
+    serviceConfigurationMap.set("aws-vpc-peering", {
+        Name: "Amazon VPC [Peering]",
+        Description: "A VPC peering connection is a networking connection between two VPCs that enables you to route traffic between them using private IPv4 addresses or IPv6 addresses.",
+        Link: "https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html",
+        ImgSrc:  null ,
+        ServiceID: "aws-vpc",
+    })
+
+    serviceMap.set("aws-vpc", {
+        Name: "Amazon VPC",
+        Description: "Define and launch AWS resources in a logically isolated virtual network",
+        Link: "https://aws.amazon.com/vpc/",
+        ImgSrc: "svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDY0ICg5MzUzNykgLSBodHRwczovL3NrZXRjaC5jb20gLS0+CiAgICA8dGl0bGU+SWNvbi1BcmNoaXRlY3R1cmUvMTYvQXJjaF9BbWF6b24tVmlydHVhbC1Qcml2YXRlLUNsb3VkXzE2PC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IHgxPSIwJSIgeTE9IjEwMCUiIHgyPSIxMDAlIiB5Mj0iMCUiIGlkPSJsaW5lYXJHcmFkaWVudC0xIj4KICAgICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzREMjdBOCIgb2Zmc2V0PSIwJSI+PC9zdG9wPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjQTE2NkZGIiBvZmZzZXQ9IjEwMCUiPjwvc3RvcD4KICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPC9kZWZzPgogICAgPGcgaWQ9Ikljb24tQXJjaGl0ZWN0dXJlLzE2L0FyY2hfQW1hem9uLVZpcnR1YWwtUHJpdmF0ZS1DbG91ZF8xNiIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9Ikljb24tQXJjaGl0ZWN0dXJlLUJHLzE2L05ldHdvcmtpbmctQ29udGVudC1EZWxpdmVyeSIgZmlsbD0idXJsKCNsaW5lYXJHcmFkaWVudC0xKSI+CiAgICAgICAgICAgIDxyZWN0IGlkPSJSZWN0YW5nbGUiIHg9IjAiIHk9IjAiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PC9yZWN0PgogICAgICAgIDwvZz4KICAgICAgICA8cGF0aCBkPSJNMTYuOTk3LDExLjgyMTA3NDMgTDE1LjA3NCwxMC44MDMwNzQzIEwxNS4wNzQsMTguNDYxMDc0MyBDMTYuOTU4LDE4LjA4MzA3NDMgMTYuOTk2LDE1LjYzMjA3NDMgMTYuOTk3LDE1LjUxOTA3NDMgTDE2Ljk5NywxMS44MjEwNzQzIFogTTEyLjg1MSwxNy44NzUwNzQzIEMxMy4xNzgsMTguMjAyMDc0MyAxMy41ODEsMTguNDAwMDc0MyAxNC4wNzQsMTguNDc3MDc0MyBMMTQuMDc0LDEwLjc4MjA3NDMgTDExLjk4MSwxMS44MjkwNzQzIEwxMS45ODEsMTUuNTIwMDc0MyBDMTEuOTgxLDE1LjUzNzA3NDMgMTEuOTg4LDE3LjAxMDA3NDMgMTIuODUxLDE3Ljg3NTA3NDMgTDEyLjg1MSwxNy44NzUwNzQzIFogTTE3Ljk5NywxMS41MjAwNzQzIEwxNy45OTcsMTUuNTIwMDc0MyBDMTcuOTk3LDE2LjkwMjA3NDMgMTcuMjgsMTkuNTE0MDc0MyAxNC41NjcsMTkuNTE0MDc0MyBDMTMuNTczLDE5LjUxNDA3NDMgMTIuNzU2LDE5LjE5OTA3NDMgMTIuMTM4LDE4LjU3NjA3NDMgQzEwLjk4MDk0NiwxNy40MTEwNzQzIDEwLjk4LDE1LjU5MzA3NDMgMTAuOTgwOTQ2LDE1LjUxNjA3NDMgTDEwLjk4MDk0NiwxMS41MjAwNzQzIEMxMC45ODA5NDYsMTEuMzMwMDc0MyAxMS4wODksMTEuMTU3MDc0MyAxMS4yNTgsMTEuMDcyMDc0MyBMMTQuMzUxLDkuNTI2MDc0MzIgQzE0LjQ5NSw5LjQ1MzA3NDMyIDE0LjY2Nyw5LjQ1NjA3NDMyIDE0LjgwOCw5LjUzMTA3NDMyIEwxNy43MywxMS4wNzgwNzQzIEMxNy44OTQsMTEuMTY0MDc0MyAxNy45OTcsMTEuMzM1MDc0MyAxNy45OTcsMTEuNTIwMDc0MyBMMTcuOTk3LDExLjUyMDA3NDMgWiBNMTkuNjksOS43MzUwNzQzMiBMMTguNzUzLDEwLjA4MTA3NDMgQzE4LjU0Nyw5LjUyNDA3NDMyIDE4LjE5OSw5LjI5NjA3NDMyIDE3LjU1NSw5LjI5NjA3NDMyIEMxNy4yOSw5LjI5NjA3NDMyIDE3LjA3MSw5LjA5MDA3NDMyIDE3LjA1Niw4LjgyNjA3NDMyIEMxNi45ODYsNy42NjMwNzQzMiAxNi4zODksNy4xMDYwNzQzMiAxNS44NjIsNy4wNzkwNzQzMiBDMTUuMTg5LDcuMDQ4MDc0MzIgMTQuOTY4LDcuMzM2MDc0MzIgMTQuODk0LDcuNDMxMDc0MzIgQzE0Ljc4Myw3LjU3NzA3NDMyIDE0LjYsNy42NDkwNzQzMiAxNC40MjIsNy42MjQwNzQzMiBDMTQuMjQxLDcuNTk2MDc0MzIgMTQuMDg5LDcuNDczMDc0MzIgMTQuMDI2LDcuMzAxMDc0MzIgQzEzLjgxMSw2LjcxMzA3NDMyIDEzLjUwOSw2LjI0MjA3NDMyIDEzLjA3Niw1LjgyMDA3NDMyIEMxMi4xNDQsNC45MTgwNzQzMiAxMC40MDcsNC43MzEwNzQzMiA4Ljg1MSw1LjM2OTA3NDMyIEM3Ljc4OSw1LjgwNDA3NDMyIDcuMTAyLDYuOTI3MDc0MzIgNy4xMDIsOC4yMzAwNzQzMiBDNy4xMDIsOC4zNzQwNzQzMiA3LjEyMSw4LjU5ODA3NDMyIDcuMTM4LDguNzM3MDc0MzIgQzcuMTY4LDguOTg3MDc0MzIgNy4wMDcsOS4yMjAwNzQzMiA2Ljc2Miw5LjI4MTA3NDMyIEM1LjU3Niw5LjU3NTA3NDMyIDUsMTAuMjU1MDc0MyA1LDExLjM1NzA3NDMgQzUsMTEuNDA3MDc0MyA0Ljk5OSwxMS40NTgwNzQzIDUuMDA0LDExLjUwODA3NDMgQzUuMDYxLDEyLjUxNzA3NDMgNS42MTMsMTMuNTc3MDc0MyA2Ljk5NSwxMy41NzcwNzQzIEw4Ljk5NywxMy41NzcwNzQzIEw4Ljk5NywxNC41NzcwNzQzIEw2Ljk5NSwxNC41NzcwNzQzIEM1LjMwOSwxNC41NzcwNzQzIDQuMTA3LDEzLjM3MzA3NDMgNC4wMDcsMTEuNTgxMDc0MyBDNC4wMDEsMTEuNTE3MDc0MyA0LDExLjQzNzA3NDMgNCwxMS4zNTcwNzQzIEM0LDkuOTMzMDc0MzIgNC43NDUsOC45MDgwNzQzMiA2LjEwOSw4LjQzMzA3NDMyIEM2LjEwNSw4LjM2MDA3NDMyIDYuMTAyLDguMjg5MDc0MzIgNi4xMDIsOC4yMzAwNzQzMiBDNi4xMDIsNi41MTkwNzQzMiA3LjAzMyw1LjAzMzA3NDMyIDguNDczLDQuNDQzMDc0MzIgQzEwLjM4NiwzLjY2MjA3NDMyIDEyLjU2NCwzLjkzMzA3NDMyIDEzLjc3Miw1LjEwMjA3NDMyIEMxNC4xNDUsNS40NjYwNzQzMiAxNC40NDcsNS44NjkwNzQzMiAxNC42ODYsNi4zMjMwNzQzMiBDMTQuOTg2LDYuMTYxMDc0MzIgMTUuMzgyLDYuMDUxMDc0MzIgMTUuOTEzLDYuMDgwMDc0MzIgQzE2Ljk2OCw2LjEzNDA3NDMyIDE3Ljc4Niw3LjAzNTA3NDMyIDE4LjAwNCw4LjMyODA3NDMyIEMxOC44MjQsOC40NDkwNzQzMiAxOS4zOSw4LjkyMTA3NDMyIDE5LjY5LDkuNzM1MDc0MzIgTDE5LjY5LDkuNzM1MDc0MzIgWiIgaWQ9IkFtYXpvbi1WaXJ0dWFsLVByaXZhdGUtQ2xvdWRfSWNvbl8xNl9TcXVpZCIgZmlsbD0iI0ZGRkZGRiI+PC9wYXRoPgogICAgPC9nPgo8L3N2Zz4=",
+        ProviderID: "aws",
+        TenancyID: "serverless",
+    })
+
+    serviceProviderMap.set("aws", {
+        Name: "AWS",
+    })
+
+    serviceTenancyMap.set("serverless", {
+        Name: "Serverless",
+        BackgroundColour: "Green",
+        FontColour: "White",
+    })
+
+
+    serviceCapabilityMap.get("networking").CategoryMap.get("private-network").SubcategoryMap.get("point-to-point-network-peering").ServiceByTenancyMap.set("aws", {
+        ServiceConfigurationID: "aws-vpc-peering"
+    });
+</script>
+
+
+
+
+
+<script>
+    serviceCapabilityMap.get("networking").CategoryMap.get("private-network").SubcategoryMap.set("hub-and-spoke-network-peering", {
+        Name: "hub-and-spoke network peering",
+        Description: "Hub and Spoke Network Peering",
+        ServiceByTenancyMap: new Map()
+    })
+</script><script>
+    serviceConfigurationMap.set("aws-transit-gateway-default", {
+        Name:  null ,
+        Description:  null ,
+        Link:  null ,
+        ImgSrc:  null ,
+        ServiceID: "aws-transit-gateway",
+    })
+
+    serviceMap.set("aws-transit-gateway", {
+        Name: "AWS Transit Gateway",
+        Description: "AWS Transit Gateway connects VPCs and on-premises networks through a central hub.",
+        Link: "https://aws.amazon.com/transit-gateway",
+        ImgSrc: "svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDY0ICg5MzUzNykgLSBodHRwczovL3NrZXRjaC5jb20gLS0+CiAgICA8dGl0bGU+SWNvbi1BcmNoaXRlY3R1cmUvMTYvQXJjaF9BV1MtUHJpdmF0ZUxpbmtfMTY8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZGVmcz4KICAgICAgICA8bGluZWFyR3JhZGllbnQgeDE9IjAlIiB5MT0iMTAwJSIgeDI9IjEwMCUiIHkyPSIwJSIgaWQ9ImxpbmVhckdyYWRpZW50LTEiPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjNEQyN0E4IiBvZmZzZXQ9IjAlIj48L3N0b3A+CiAgICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiNBMTY2RkYiIG9mZnNldD0iMTAwJSI+PC9zdG9wPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8ZyBpZD0iSWNvbi1BcmNoaXRlY3R1cmUvMTYvQXJjaF9BV1MtUHJpdmF0ZUxpbmtfMTYiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJJY29uLUFyY2hpdGVjdHVyZS1CRy8xNi9OZXR3b3JraW5nLUNvbnRlbnQtRGVsaXZlcnkiIGZpbGw9InVybCgjbGluZWFyR3JhZGllbnQtMSkiPgogICAgICAgICAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlIiB4PSIwIiB5PSIwIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiPjwvcmVjdD4KICAgICAgICA8L2c+CiAgICAgICAgPHBhdGggZD0iTTEyLjczMjg0MzYsOC45MzEyMjQ5MyBDMTMuMTM1NjgxNSw5LjMwNjIyNTM1IDEzLjQ1MTEyMDcsOS43ODcyNjcwMiAxMy42NzAxMTk5LDEwLjM2MTgxNzggQzEzLjczMjQwNDEsMTAuNTI2NjYzNyAxMy44ODQwOTYyLDEwLjY0NjIwMTEgMTQuMDY1OTI1OCwxMC42NzIyMjk0IEMxNC4yNDk3NjQ2LDEwLjY5ODI1NzggMTQuNDI4NTgwNCwxMC42Mjg4NDg5IDE0LjU0MTA5MzcsMTAuNDg5MDY3MyBDMTQuODI3NCwxMC4xMjc1NjMgMTUuMjkxNTE3NSw5Ljk3NjIxMzI0IDE1LjcyMDQ3NDcsMTAuMTAxNTM0NyBDMTYuMjM5ODQ0MywxMC4yNTQ4MTI1IDE2LjU2MzMyMDEsMTAuNzU4OTkwNSAxNi42MDk1MzEsMTEuNDg3NzgzMSBDMTYuNjIzNTk1MiwxMS43MDY2MTM2IDE2Ljc4ODM0NjgsMTEuODg4ODExOCAxNy4wMTIzNjg5LDExLjkzMjE5MjMgQzE4LjMyODM3MzIsMTIuMTg2NjkxMyAxOC45OTU0MTY2LDEyLjg4NTU5OTUgMTguOTk1NDE2NiwxNC4wMDg2NzI4IEMxOC45OTU0MTY2LDE1LjM1NDQzMjYgMTguMjczMTIxMSwxNi4wMzU5ODg2IDE2Ljg0NTYwODEsMTYuMDM1OTg4NiBMNy4xNjg0NTYwOCwxNi4wMzU5ODg2IEM1Ljk4MTAzODQ5LDE2LjAzNTAyNDYgNS4wNzI4OTUwOCwxNS4yMzc3ODcyIDUuMDA4NjAxNzUsMTQuMTQ1NTYyNCBMNS4wMDQ1ODM0MSwxMy45ODY1MDA1IEM1LjAwNDU4MzQxLDEyLjY0MjY2ODcgNS44OTU2NDg5LDEyLjE1MDA1ODkgNi42NDQwNjM1NCwxMS45NzI2ODA4IEM2Ljg5MjE5NTY0LDExLjkxNDg0MDEgNy4wNTQ5MzgxNiwxMS42ODYzNjk0IDcuMDIxNzg2OSwxMS40NDI0NzQ1IEM3LjAwNTcxMzU3LDExLjMxODExNzEgNi45OTc2NzY5LDExLjE5MDg2NzYgNi45OTc2NzY5LDExLjA2MTY5IEM2Ljk5NzY3NjksOS45MDc3Njg0NCA3Ljg1NzYwMDMsOC42NjUxNTc4IDguOTU2NjE0NTUsOC4yMzQyNDQ3MiBDOS40NTY4OTcwOSw4LjAzNzU4NjQgOS45MTkwMDU0Niw3Ljk1OTUwMTQ4IDEwLjMzNzkxNjcsNy45NTk1MDE0OCBDMTEuNTI3MzQzNSw3Ljk1OTUwMTQ4IDEyLjM2NjE3MDcsOC41ODk5NjQ5MSAxMi43MzI4NDM2LDguOTMxMjI0OTMgTTIwLDE0LjAwODY3MjggQzIwLDEyLjUxODMxMTIgMTkuMTQxMDgxMiwxMS40ODQ4OTEgMTcuNTY5OTEyNywxMS4wNjk0MDIxIEMxNy40MDYxNjU2LDEwLjExNjk1ODkgMTYuODQxNTg5OCw5LjQyMjg3MDcyIDE2LjAxMjgwODQsOS4xNzk5Mzk4NiBDMTUuNDMzMTYzOCw5LjAwOTMwOTg1IDE0LjgyMzM4MTcsOS4wOTUxMDY4NiAxNC4zMjIwOTQ2LDkuMzk0OTE0MzkgQzE0LjA4MTk5OTEsOC45NTQzNjEyIDEzLjc4NDY0MjQsOC41NjY4Mjg2NCAxMy40MzIwMzM3LDguMjM5MDY0NzggQzEyLjEwNTk4MzUsNy4wMDMyMDIyMSAxMC4yOTA3MDEzLDYuNjY3NzI2MjYgOC41NzU4Nzc0NCw3LjM0MTU3MDIgQzcuMTAzMTU4MTYsNy45MTk5NzcwMiA1Ljk5MzA5MzQ5LDkuNTE5MjcxODYgNS45OTMwOTM0OSwxMS4wNjE2OSBDNS45OTMwOTM0OSwxMS4wOTQ0NjY0IDUuOTkzMDkzNDksMTEuMTI2Mjc4OCA1Ljk5NDA5ODA3LDExLjE1ODA5MTIgQzUuMTg2NDEzMDEsMTEuNDQ4MjU4NiA0LDEyLjE4MTg3MTIgNCwxMy45ODY1MDA1IEM0LDE0LjA1Njg3MzMgNC4wMDIwMDkxNywxNC4xMjUzMTgxIDQuMDA1MDIyOTIsMTQuMTk1NjkxIEM0LjA5OTQ1Mzc2LDE1Ljc5MzA1NzggNS40NTg2NTUxMSwxNi45OTgwNzIgNy4xNjc0NTE1LDE3IEwxNi44NDU2MDgxLDE3IEMxOC44MjE2MjM3LDE3IDIwLDE1Ljg4MTc0NjggMjAsMTQuMDA4NjcyOCBNMTIuOTAxNjEzNiwxMy4zOTI2Njk1IEwxMS44OTcwMzAyLDEzLjM5MjY2OTUgQzExLjg5NzAzMDIsMTMuNzcxNTI2IDExLjY3MDk5ODksMTQuMTU0MjM4NSAxMS4xNjU2OTM1LDE0LjE1NDIzODUgTDguNjcxMzEyODYsMTQuMTU0MjM4NSBDOC40NDIyNjc4NSwxNC4xNTQyMzg1IDcuOTA4ODM0MDYsMTQuMDkwNjEzNyA3LjkwODgzNDA2LDEzLjQ5ODcxMDcgQzcuOTA4ODM0MDYsMTMuMDM1MDIxMyA4LjIzNjMyODI1LDEyLjY4NjA0OTIgOC42NzEzMTI4NiwxMi42ODYwNDkyIEw5LjkwNjk1MDQ2LDEyLjY4NjA0OTIgTDkuOTA2OTUwNDYsMTEuNzIyMDM3OCBMOC42NzEzMTI4NiwxMS43MjIwMzc4IEM3LjY4MDc5MzYyLDExLjcyMjAzNzggNi45MDQyNTA2NCwxMi41MDE5MjMgNi45MDQyNTA2NCwxMy40OTg3MTA3IEM2LjkwNDI1MDY0LDE0LjQ1MjExOCA3LjYzMTU2OTAzLDE1LjExODI0OTggOC42NzEzMTI4NiwxNS4xMTgyNDk4IEwxMS4xNjU2OTM1LDE1LjExODI0OTggQzEyLjE1NTIwODEsMTUuMTE4MjQ5OCAxMi45MDE2MTM2LDE0LjM3NTk2MTEgMTIuOTAxNjEzNiwxMy4zOTI2Njk1IE0xNC4zODEzNjUsMTQuNTUxNDExMSBMMTMuNzA1MjgwMywxNC41NTE0MTExIEwxMy43MDUyODAzLDEzLjU4NzM5OTggTDE0LjM4MTM2NSwxMy41ODczOTk4IEMxNC43MDA4MjI1LDEzLjU4NzM5OTggMTUuMjM3MjcsMTMuNDkzODkwNyAxNS4yMzcyNywxMi44NjgyNDczIEMxNS4yMzcyNywxMi4zOTIwMjU3IDE0Ljk2MjAxNDIsMTIuMTUwMDU4OSAxNC40MTg1MzQ2LDEyLjE1MDA1ODkgTDExLjk5MDQ1NjUsMTIuMTUwMDU4OSBDMTEuNDI1ODgwNiwxMi4xNTAwNTg5IDExLjM4MTY3ODksMTIuNzc2NjY2MiAxMS4zODE2Nzg5LDEyLjk2NzU0MDUgTDEwLjM3NzA5NTUsMTIuOTY3NTQwNSBDMTAuMzc3MDk1NSwxMS45MTg2OTYxIDExLjA0MDEyMDYsMTEuMTg2MDQ3NSAxMS45OTA0NTY1LDExLjE4NjA0NzUgTDE0LjQxODUzNDYsMTEuMTg2MDQ3NSBDMTUuNTA5NTEyMSwxMS4xODYwNDc1IDE2LjI0MTg1MzUsMTEuODYyNzgzNSAxNi4yNDE4NTM1LDEyLjg2ODI0NzMgQzE2LjI0MTg1MzUsMTMuODc0Njc1MiAxNS40OTQ0NDM0LDE0LjU1MTQxMTEgMTQuMzgxMzY1LDE0LjU1MTQxMTEiIGlkPSJBV1MtUHJpdmF0ZUxpbmtfSWNvbl8xNl9TcXVpZCIgZmlsbD0iI0ZGRkZGRiI+PC9wYXRoPgogICAgPC9nPgo8L3N2Zz4=",
+        ProviderID: "aws",
+        TenancyID: "managed",
+    })
+
+    serviceProviderMap.set("aws", {
+        Name: "AWS",
+    })
+
+    serviceTenancyMap.set("managed", {
+        Name: "Managed",
+        BackgroundColour: "SlateBlue",
+        FontColour: "White",
+    })
+
+
+    serviceCapabilityMap.get("networking").CategoryMap.get("private-network").SubcategoryMap.get("hub-and-spoke-network-peering").ServiceByTenancyMap.set("aws", {
+        ServiceConfigurationID: "aws-transit-gateway-default"
     });
 </script>
 
@@ -1770,13 +1982,13 @@
 
 
 <script>
-    serviceCapabilityMap.get("networking").CategoryMap.set("load-balancer", {
-        Name: "load balancer",
-        Description: "Load Balancer",
+    serviceCapabilityMap.get("networking").CategoryMap.set("application-connectivity", {
+        Name: "application connectivity",
+        Description: "Application Connectivity",
         SubcategoryMap: new Map(),
     })
 </script><script>
-    serviceCapabilityMap.get("networking").CategoryMap.get("load-balancer").SubcategoryMap.set("layer-7-load-balancer", {
+    serviceCapabilityMap.get("networking").CategoryMap.get("application-connectivity").SubcategoryMap.set("layer-7-load-balancer", {
         Name: "layer 7 load balancer",
         Description: "Layer 7 Load Balancer",
         ServiceByTenancyMap: new Map()
@@ -1810,7 +2022,7 @@
     })
 
 
-    serviceCapabilityMap.get("networking").CategoryMap.get("load-balancer").SubcategoryMap.get("layer-7-load-balancer").ServiceByTenancyMap.set("aws", {
+    serviceCapabilityMap.get("networking").CategoryMap.get("application-connectivity").SubcategoryMap.get("layer-7-load-balancer").ServiceByTenancyMap.set("aws", {
         ServiceConfigurationID: "aws-classic-load-balancer-default"
     });
 </script>
@@ -1846,7 +2058,7 @@
     })
 
 
-    serviceCapabilityMap.get("networking").CategoryMap.get("load-balancer").SubcategoryMap.get("layer-7-load-balancer").ServiceByTenancyMap.set("azure", {
+    serviceCapabilityMap.get("networking").CategoryMap.get("application-connectivity").SubcategoryMap.get("layer-7-load-balancer").ServiceByTenancyMap.set("azure", {
         ServiceConfigurationID: "azure-application-gateway-default"
     });
 </script>
@@ -1882,7 +2094,7 @@
     })
 
 
-    serviceCapabilityMap.get("networking").CategoryMap.get("load-balancer").SubcategoryMap.get("layer-7-load-balancer").ServiceByTenancyMap.set("aws", {
+    serviceCapabilityMap.get("networking").CategoryMap.get("application-connectivity").SubcategoryMap.get("layer-7-load-balancer").ServiceByTenancyMap.set("aws", {
         ServiceConfigurationID: "aws-application-load-balancer-default"
     });
 </script>
@@ -1892,7 +2104,7 @@
 
 
 <script>
-    serviceCapabilityMap.get("networking").CategoryMap.get("load-balancer").SubcategoryMap.set("layer-4-load-balancer", {
+    serviceCapabilityMap.get("networking").CategoryMap.get("application-connectivity").SubcategoryMap.set("layer-4-load-balancer", {
         Name: "layer 4 load balancer",
         Description: "Layer 4 Load Balancer",
         ServiceByTenancyMap: new Map()
@@ -1926,7 +2138,7 @@
     })
 
 
-    serviceCapabilityMap.get("networking").CategoryMap.get("load-balancer").SubcategoryMap.get("layer-4-load-balancer").ServiceByTenancyMap.set("aws", {
+    serviceCapabilityMap.get("networking").CategoryMap.get("application-connectivity").SubcategoryMap.get("layer-4-load-balancer").ServiceByTenancyMap.set("aws", {
         ServiceConfigurationID: "aws-classic-load-balancer-default"
     });
 </script>
@@ -1962,7 +2174,7 @@
     })
 
 
-    serviceCapabilityMap.get("networking").CategoryMap.get("load-balancer").SubcategoryMap.get("layer-4-load-balancer").ServiceByTenancyMap.set("azure", {
+    serviceCapabilityMap.get("networking").CategoryMap.get("application-connectivity").SubcategoryMap.get("layer-4-load-balancer").ServiceByTenancyMap.set("azure", {
         ServiceConfigurationID: "azure-load-balancer-default"
     });
 </script>
@@ -1998,8 +2210,150 @@
     })
 
 
-    serviceCapabilityMap.get("networking").CategoryMap.get("load-balancer").SubcategoryMap.get("layer-4-load-balancer").ServiceByTenancyMap.set("aws", {
+    serviceCapabilityMap.get("networking").CategoryMap.get("application-connectivity").SubcategoryMap.get("layer-4-load-balancer").ServiceByTenancyMap.set("aws", {
         ServiceConfigurationID: "aws-network-load-balancer-default"
+    });
+</script>
+
+
+
+
+
+<script>
+    serviceCapabilityMap.get("networking").CategoryMap.get("application-connectivity").SubcategoryMap.set("intra-csp-endpoint", {
+        Name: "intra-csp endpoint",
+        Description: "Intra-CSP Endpoint",
+        ServiceByTenancyMap: new Map()
+    })
+</script><script>
+    serviceConfigurationMap.set("aws-privatelink-default", {
+        Name:  null ,
+        Description:  null ,
+        Link:  null ,
+        ImgSrc:  null ,
+        ServiceID: "aws-privatelink",
+    })
+
+    serviceMap.set("aws-privatelink", {
+        Name: "AWS PrivateLink",
+        Description: "AWS PrivateLink provides private connectivity between VPCs, AWS services, and your on-premises networks, without exposing your traffic to the public internet.",
+        Link: "https://aws.amazon.com/privatelink/",
+        ImgSrc: "svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDY0ICg5MzUzNykgLSBodHRwczovL3NrZXRjaC5jb20gLS0+CiAgICA8dGl0bGU+SWNvbi1BcmNoaXRlY3R1cmUvMTYvQXJjaF9BV1MtUHJpdmF0ZUxpbmtfMTY8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZGVmcz4KICAgICAgICA8bGluZWFyR3JhZGllbnQgeDE9IjAlIiB5MT0iMTAwJSIgeDI9IjEwMCUiIHkyPSIwJSIgaWQ9ImxpbmVhckdyYWRpZW50LTEiPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjNEQyN0E4IiBvZmZzZXQ9IjAlIj48L3N0b3A+CiAgICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiNBMTY2RkYiIG9mZnNldD0iMTAwJSI+PC9zdG9wPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8ZyBpZD0iSWNvbi1BcmNoaXRlY3R1cmUvMTYvQXJjaF9BV1MtUHJpdmF0ZUxpbmtfMTYiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJJY29uLUFyY2hpdGVjdHVyZS1CRy8xNi9OZXR3b3JraW5nLUNvbnRlbnQtRGVsaXZlcnkiIGZpbGw9InVybCgjbGluZWFyR3JhZGllbnQtMSkiPgogICAgICAgICAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlIiB4PSIwIiB5PSIwIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiPjwvcmVjdD4KICAgICAgICA8L2c+CiAgICAgICAgPHBhdGggZD0iTTEyLjczMjg0MzYsOC45MzEyMjQ5MyBDMTMuMTM1NjgxNSw5LjMwNjIyNTM1IDEzLjQ1MTEyMDcsOS43ODcyNjcwMiAxMy42NzAxMTk5LDEwLjM2MTgxNzggQzEzLjczMjQwNDEsMTAuNTI2NjYzNyAxMy44ODQwOTYyLDEwLjY0NjIwMTEgMTQuMDY1OTI1OCwxMC42NzIyMjk0IEMxNC4yNDk3NjQ2LDEwLjY5ODI1NzggMTQuNDI4NTgwNCwxMC42Mjg4NDg5IDE0LjU0MTA5MzcsMTAuNDg5MDY3MyBDMTQuODI3NCwxMC4xMjc1NjMgMTUuMjkxNTE3NSw5Ljk3NjIxMzI0IDE1LjcyMDQ3NDcsMTAuMTAxNTM0NyBDMTYuMjM5ODQ0MywxMC4yNTQ4MTI1IDE2LjU2MzMyMDEsMTAuNzU4OTkwNSAxNi42MDk1MzEsMTEuNDg3NzgzMSBDMTYuNjIzNTk1MiwxMS43MDY2MTM2IDE2Ljc4ODM0NjgsMTEuODg4ODExOCAxNy4wMTIzNjg5LDExLjkzMjE5MjMgQzE4LjMyODM3MzIsMTIuMTg2NjkxMyAxOC45OTU0MTY2LDEyLjg4NTU5OTUgMTguOTk1NDE2NiwxNC4wMDg2NzI4IEMxOC45OTU0MTY2LDE1LjM1NDQzMjYgMTguMjczMTIxMSwxNi4wMzU5ODg2IDE2Ljg0NTYwODEsMTYuMDM1OTg4NiBMNy4xNjg0NTYwOCwxNi4wMzU5ODg2IEM1Ljk4MTAzODQ5LDE2LjAzNTAyNDYgNS4wNzI4OTUwOCwxNS4yMzc3ODcyIDUuMDA4NjAxNzUsMTQuMTQ1NTYyNCBMNS4wMDQ1ODM0MSwxMy45ODY1MDA1IEM1LjAwNDU4MzQxLDEyLjY0MjY2ODcgNS44OTU2NDg5LDEyLjE1MDA1ODkgNi42NDQwNjM1NCwxMS45NzI2ODA4IEM2Ljg5MjE5NTY0LDExLjkxNDg0MDEgNy4wNTQ5MzgxNiwxMS42ODYzNjk0IDcuMDIxNzg2OSwxMS40NDI0NzQ1IEM3LjAwNTcxMzU3LDExLjMxODExNzEgNi45OTc2NzY5LDExLjE5MDg2NzYgNi45OTc2NzY5LDExLjA2MTY5IEM2Ljk5NzY3NjksOS45MDc3Njg0NCA3Ljg1NzYwMDMsOC42NjUxNTc4IDguOTU2NjE0NTUsOC4yMzQyNDQ3MiBDOS40NTY4OTcwOSw4LjAzNzU4NjQgOS45MTkwMDU0Niw3Ljk1OTUwMTQ4IDEwLjMzNzkxNjcsNy45NTk1MDE0OCBDMTEuNTI3MzQzNSw3Ljk1OTUwMTQ4IDEyLjM2NjE3MDcsOC41ODk5NjQ5MSAxMi43MzI4NDM2LDguOTMxMjI0OTMgTTIwLDE0LjAwODY3MjggQzIwLDEyLjUxODMxMTIgMTkuMTQxMDgxMiwxMS40ODQ4OTEgMTcuNTY5OTEyNywxMS4wNjk0MDIxIEMxNy40MDYxNjU2LDEwLjExNjk1ODkgMTYuODQxNTg5OCw5LjQyMjg3MDcyIDE2LjAxMjgwODQsOS4xNzk5Mzk4NiBDMTUuNDMzMTYzOCw5LjAwOTMwOTg1IDE0LjgyMzM4MTcsOS4wOTUxMDY4NiAxNC4zMjIwOTQ2LDkuMzk0OTE0MzkgQzE0LjA4MTk5OTEsOC45NTQzNjEyIDEzLjc4NDY0MjQsOC41NjY4Mjg2NCAxMy40MzIwMzM3LDguMjM5MDY0NzggQzEyLjEwNTk4MzUsNy4wMDMyMDIyMSAxMC4yOTA3MDEzLDYuNjY3NzI2MjYgOC41NzU4Nzc0NCw3LjM0MTU3MDIgQzcuMTAzMTU4MTYsNy45MTk5NzcwMiA1Ljk5MzA5MzQ5LDkuNTE5MjcxODYgNS45OTMwOTM0OSwxMS4wNjE2OSBDNS45OTMwOTM0OSwxMS4wOTQ0NjY0IDUuOTkzMDkzNDksMTEuMTI2Mjc4OCA1Ljk5NDA5ODA3LDExLjE1ODA5MTIgQzUuMTg2NDEzMDEsMTEuNDQ4MjU4NiA0LDEyLjE4MTg3MTIgNCwxMy45ODY1MDA1IEM0LDE0LjA1Njg3MzMgNC4wMDIwMDkxNywxNC4xMjUzMTgxIDQuMDA1MDIyOTIsMTQuMTk1NjkxIEM0LjA5OTQ1Mzc2LDE1Ljc5MzA1NzggNS40NTg2NTUxMSwxNi45OTgwNzIgNy4xNjc0NTE1LDE3IEwxNi44NDU2MDgxLDE3IEMxOC44MjE2MjM3LDE3IDIwLDE1Ljg4MTc0NjggMjAsMTQuMDA4NjcyOCBNMTIuOTAxNjEzNiwxMy4zOTI2Njk1IEwxMS44OTcwMzAyLDEzLjM5MjY2OTUgQzExLjg5NzAzMDIsMTMuNzcxNTI2IDExLjY3MDk5ODksMTQuMTU0MjM4NSAxMS4xNjU2OTM1LDE0LjE1NDIzODUgTDguNjcxMzEyODYsMTQuMTU0MjM4NSBDOC40NDIyNjc4NSwxNC4xNTQyMzg1IDcuOTA4ODM0MDYsMTQuMDkwNjEzNyA3LjkwODgzNDA2LDEzLjQ5ODcxMDcgQzcuOTA4ODM0MDYsMTMuMDM1MDIxMyA4LjIzNjMyODI1LDEyLjY4NjA0OTIgOC42NzEzMTI4NiwxMi42ODYwNDkyIEw5LjkwNjk1MDQ2LDEyLjY4NjA0OTIgTDkuOTA2OTUwNDYsMTEuNzIyMDM3OCBMOC42NzEzMTI4NiwxMS43MjIwMzc4IEM3LjY4MDc5MzYyLDExLjcyMjAzNzggNi45MDQyNTA2NCwxMi41MDE5MjMgNi45MDQyNTA2NCwxMy40OTg3MTA3IEM2LjkwNDI1MDY0LDE0LjQ1MjExOCA3LjYzMTU2OTAzLDE1LjExODI0OTggOC42NzEzMTI4NiwxNS4xMTgyNDk4IEwxMS4xNjU2OTM1LDE1LjExODI0OTggQzEyLjE1NTIwODEsMTUuMTE4MjQ5OCAxMi45MDE2MTM2LDE0LjM3NTk2MTEgMTIuOTAxNjEzNiwxMy4zOTI2Njk1IE0xNC4zODEzNjUsMTQuNTUxNDExMSBMMTMuNzA1MjgwMywxNC41NTE0MTExIEwxMy43MDUyODAzLDEzLjU4NzM5OTggTDE0LjM4MTM2NSwxMy41ODczOTk4IEMxNC43MDA4MjI1LDEzLjU4NzM5OTggMTUuMjM3MjcsMTMuNDkzODkwNyAxNS4yMzcyNywxMi44NjgyNDczIEMxNS4yMzcyNywxMi4zOTIwMjU3IDE0Ljk2MjAxNDIsMTIuMTUwMDU4OSAxNC40MTg1MzQ2LDEyLjE1MDA1ODkgTDExLjk5MDQ1NjUsMTIuMTUwMDU4OSBDMTEuNDI1ODgwNiwxMi4xNTAwNTg5IDExLjM4MTY3ODksMTIuNzc2NjY2MiAxMS4zODE2Nzg5LDEyLjk2NzU0MDUgTDEwLjM3NzA5NTUsMTIuOTY3NTQwNSBDMTAuMzc3MDk1NSwxMS45MTg2OTYxIDExLjA0MDEyMDYsMTEuMTg2MDQ3NSAxMS45OTA0NTY1LDExLjE4NjA0NzUgTDE0LjQxODUzNDYsMTEuMTg2MDQ3NSBDMTUuNTA5NTEyMSwxMS4xODYwNDc1IDE2LjI0MTg1MzUsMTEuODYyNzgzNSAxNi4yNDE4NTM1LDEyLjg2ODI0NzMgQzE2LjI0MTg1MzUsMTMuODc0Njc1MiAxNS40OTQ0NDM0LDE0LjU1MTQxMTEgMTQuMzgxMzY1LDE0LjU1MTQxMTEiIGlkPSJBV1MtUHJpdmF0ZUxpbmtfSWNvbl8xNl9TcXVpZCIgZmlsbD0iI0ZGRkZGRiI+PC9wYXRoPgogICAgPC9nPgo8L3N2Zz4=",
+        ProviderID: "aws",
+        TenancyID: "managed",
+    })
+
+    serviceProviderMap.set("aws", {
+        Name: "AWS",
+    })
+
+    serviceTenancyMap.set("managed", {
+        Name: "Managed",
+        BackgroundColour: "SlateBlue",
+        FontColour: "White",
+    })
+
+
+    serviceCapabilityMap.get("networking").CategoryMap.get("application-connectivity").SubcategoryMap.get("intra-csp-endpoint").ServiceByTenancyMap.set("aws", {
+        ServiceConfigurationID: "aws-privatelink-default"
+    });
+</script>
+
+
+
+
+
+<script>
+    serviceCapabilityMap.get("networking").CategoryMap.get("application-connectivity").SubcategoryMap.set("edge-optimised-endpoint", {
+        Name: "edge-optimised endpoint",
+        Description: "Edge-Optimised Endpoint",
+        ServiceByTenancyMap: new Map()
+    })
+</script><script>
+    serviceConfigurationMap.set("aws-global-accelerator-default", {
+        Name:  null ,
+        Description:  null ,
+        Link:  null ,
+        ImgSrc:  null ,
+        ServiceID: "aws-global-accelerator",
+    })
+
+    serviceMap.set("aws-global-accelerator", {
+        Name: "AWS Global Accelerator",
+        Description: "AWS Global Accelerator is a networking service that improves the performance of your users’ traffic by up to 60% using Amazon Web Services’ global network infrastructure.",
+        Link: "https://aws.amazon.com/global-accelerator/",
+        ImgSrc: "svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDY0ICg5MzUzNykgLSBodHRwczovL3NrZXRjaC5jb20gLS0+CiAgICA8dGl0bGU+SWNvbi1BcmNoaXRlY3R1cmUvMTYvQXJjaF9BV1MtR2xvYmFsLUFjY2VsZXJhdG9yXzE2PC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IHgxPSIwJSIgeTE9IjEwMCUiIHgyPSIxMDAlIiB5Mj0iMCUiIGlkPSJsaW5lYXJHcmFkaWVudC0xIj4KICAgICAgICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iIzREMjdBOCIgb2Zmc2V0PSIwJSI+PC9zdG9wPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjQTE2NkZGIiBvZmZzZXQ9IjEwMCUiPjwvc3RvcD4KICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPC9kZWZzPgogICAgPGcgaWQ9Ikljb24tQXJjaGl0ZWN0dXJlLzE2L0FyY2hfQVdTLUdsb2JhbC1BY2NlbGVyYXRvcl8xNiIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9Ikljb24tQXJjaGl0ZWN0dXJlLUJHLzE2L05ldHdvcmtpbmctQ29udGVudC1EZWxpdmVyeSIgZmlsbD0idXJsKCNsaW5lYXJHcmFkaWVudC0xKSI+CiAgICAgICAgICAgIDxyZWN0IGlkPSJSZWN0YW5nbGUiIHg9IjAiIHk9IjAiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PC9yZWN0PgogICAgICAgIDwvZz4KICAgICAgICA8cGF0aCBkPSJNOS4yMiwxMy44OTcgQzkuMzUsMTQuMjggOS41MDUsMTQuNjI2IDkuNjc5LDE0LjkzMyBDOS4yNDgsMTQuNzI2IDguODU1LDE0LjQ1OSA4LjUwOCwxNC4xMzcgQzguNzMxLDE0LjA0NSA4Ljk2OCwxMy45NjcgOS4yMiwxMy44OTcgTDkuMjIsMTMuODk3IFogTTguNzQ5LDExLjA2MyBDOC43NjksMTEuNzI5IDguODQsMTIuMzU5IDguOTYsMTIuOTM1IEM4LjU0NiwxMy4wNDkgOC4xNjUsMTMuMTg4IDcuODIsMTMuMzUyIEM3LjM2OCwxMi42OTEgNy4xMDEsMTEuOTA1IDcuMDM2LDExLjA2MyBMOC43NDksMTEuMDYzIFogTTguOTg4LDguMzUzIEM4Ljg3LDguODgxIDguNzksOS40NTQgOC43NTgsMTAuMDYzIEw3LjA2NiwxMC4wNjMgQzcuMTczLDkuMjg2IDcuNDU5LDguNTcxIDcuODk5LDcuOTYzIEM4LjIzMiw4LjExNSA4LjU5NCw4LjI0NiA4Ljk4OCw4LjM1MyBMOC45ODgsOC4zNTMgWiBNOS4yNjIsNy4zOTUgQzkuMDM1LDcuMzMzIDguODE1LDcuMjY4IDguNjEyLDcuMTg5IEM4LjkzMyw2LjkwNiA5LjI4OCw2LjY2NiA5LjY3OSw2LjQ3OCBDOS41MjMsNi43NTMgOS4zODMsNy4wNTkgOS4yNjIsNy4zOTUgTDkuMjYyLDcuMzk1IFogTTEzLjE0Niw3LjYwMSBDMTIuNjgzLDcuNjY4IDEyLjIwNCw3LjcxNCAxMS43MDYsNy43MTQgQzExLjIwOCw3LjcxNCAxMC43Myw3LjY2OCAxMC4yNjcsNy42MDEgQzEwLjY1Myw2LjYwNSAxMS4xOTMsNiAxMS43MDYsNiBDMTIuMjIsNiAxMi43Niw2LjYwNSAxMy4xNDYsNy42MDEgTDEzLjE0Niw3LjYwMSBaIE0xNC4xNTEsNy4zOTUgQzE0LjAzLDcuMDU4IDEzLjg5LDYuNzUzIDEzLjczNCw2LjQ3OCBDMTQuMTI0LDYuNjY2IDE0LjQ4LDYuOTA2IDE0LjgwMSw3LjE4OSBDMTQuNTk3LDcuMjY4IDE0LjM3Nyw3LjMzMyAxNC4xNTEsNy4zOTUgTDE0LjE1MSw3LjM5NSBaIE0xNC42NTUsMTAuMDYzIEMxNC42MjIsOS40NTQgMTQuNTQyLDguODgxIDE0LjQyNSw4LjM1MyBDMTQuODE4LDguMjQ2IDE1LjE4LDguMTE1IDE1LjUxMyw3Ljk2MyBDMTUuOTUyLDguNTcxIDE2LjI0LDkuMjg2IDE2LjM0NywxMC4wNjMgTDE0LjY1NSwxMC4wNjMgWiBNMTQuNDUyLDEyLjkzNSBDMTQuNTczLDEyLjM1OSAxNC42NDQsMTEuNzI5IDE0LjY2MywxMS4wNjMgTDE2LjM3NSwxMS4wNjMgQzE2LjMxLDExLjkwNiAxNi4wNDMsMTIuNjkyIDE1LjU5MiwxMy4zNTMgQzE1LjI0NiwxMy4xODkgMTQuODY2LDEzLjA1IDE0LjQ1MiwxMi45MzUgTDE0LjQ1MiwxMi45MzUgWiBNMTQuMTkzLDEzLjg5NyBDMTQuNDQ1LDEzLjk2NyAxNC42ODIsMTQuMDQ2IDE0LjkwNCwxNC4xMzcgQzE0LjU1OCwxNC40NTkgMTQuMTY0LDE0LjcyNiAxMy43MzQsMTQuOTMzIEMxMy45MDcsMTQuNjI2IDE0LjA2MywxNC4yODEgMTQuMTkzLDEzLjg5NyBMMTQuMTkzLDEzLjg5NyBaIE0xMy4xOTMsMTMuNjg3IEMxMi45MTQsMTQuNDU1IDEyLjU0NywxNC45OTkgMTIuMTYxLDE1LjI0NiBMMTIuMTYxLDEzLjU4OSBDMTIuNTE2LDEzLjYwNSAxMi44NTksMTMuNjM3IDEzLjE5MywxMy42ODcgTDEzLjE5MywxMy42ODcgWiBNMTEuMTYxLDEzLjU5NCBMMTEuMTYxLDE1LjE3OSBDMTAuODA4LDE0LjkwOSAxMC40NzcsMTQuMzk1IDEwLjIyLDEzLjY4NyBDMTAuNTI2LDEzLjY0MSAxMC44MzgsMTMuNjEgMTEuMTYxLDEzLjU5NCBMMTEuMTYxLDEzLjU5NCBaIE05Ljc3MSwxMC4wNjMgQzkuODAzLDkuNTIgOS44NzIsOS4wMTkgOS45NzYsOC41NjQgQzEwLjUzMiw4LjY1MyAxMS4xMDksOC43MTQgMTEuNzA2LDguNzE0IEMxMi4zMDQsOC43MTQgMTIuODgsOC42NTMgMTMuNDM3LDguNTY0IEMxMy41NCw5LjAxOSAxMy42MSw5LjUyIDEzLjY0MiwxMC4wNjMgTDkuNzcxLDEwLjA2MyBaIE0xMy42NTYsMTEuMDYzIEMxMy42MzUsMTEuNjYzIDEzLjU3NCwxMi4yMjIgMTMuNDY4LDEyLjcyMSBDMTIuOTAyLDEyLjYyOSAxMi4zMTUsMTIuNTY2IDExLjcwNSwxMi41NjYgQzExLjA5NywxMi41NjYgMTAuNTEsMTIuNjI5IDkuOTQ1LDEyLjcyMSBDOS44MzksMTIuMjIyIDkuNzc4LDExLjY2MyA5Ljc1NywxMS4wNjMgTDEzLjY1NiwxMS4wNjMgWiBNMTcuNDExLDEwLjcwNSBDMTcuNDExLDcuNTU5IDE0Ljg1Miw1IDExLjcwNiw1IEM4LjU2LDUgNiw3LjU1OSA2LDEwLjcwNSBDNiwxMy42NjcgOC4yNywxNi4xMDcgMTEuMTYxLDE2LjM4MyBMMTEuMTYxLDE2Ljg4NyBMOC4xNzMsMTYuODg3IEw4LjE3MywxOC44NSBMOS4xNzMsMTguODUgTDkuMTczLDE3Ljg4NyBMMTEuMTYxLDE3Ljg4NyBMMTEuMTYxLDE5Ljg1IEwxMi4xNjEsMTkuODUgTDEyLjE2MSwxNy44ODcgTDE0LjE0MiwxNy44ODcgTDE0LjE0MiwxOC44NSBMMTUuMTQyLDE4Ljg1IEwxNS4xNDIsMTYuODg3IEwxMi4xNjEsMTYuODg3IEwxMi4xNjEsMTYuMzg4IEMxNS4wOTQsMTYuMTU0IDE3LjQxMSwxMy42OTcgMTcuNDExLDEwLjcwNSBMMTcuNDExLDEwLjcwNSBaIiBpZD0iQVdTLUdsb2JhbC1BY2NlbGVyYXRvcl9JY29uXzE2X1NxdWlkIiBmaWxsPSIjRkZGRkZGIj48L3BhdGg+CiAgICA8L2c+Cjwvc3ZnPg==",
+        ProviderID: "aws",
+        TenancyID: "managed",
+    })
+
+    serviceProviderMap.set("aws", {
+        Name: "AWS",
+    })
+
+    serviceTenancyMap.set("managed", {
+        Name: "Managed",
+        BackgroundColour: "SlateBlue",
+        FontColour: "White",
+    })
+
+
+    serviceCapabilityMap.get("networking").CategoryMap.get("application-connectivity").SubcategoryMap.get("edge-optimised-endpoint").ServiceByTenancyMap.set("aws", {
+        ServiceConfigurationID: "aws-global-accelerator-default"
+    });
+</script>
+
+
+
+
+
+
+
+
+
+<script>
+    serviceCapabilityMap.get("networking").CategoryMap.set("dns", {
+        Name: "dns",
+        Description: "DNS",
+        SubcategoryMap: new Map(),
+    })
+</script><script>
+    serviceCapabilityMap.get("networking").CategoryMap.get("dns").SubcategoryMap.set("dns", {
+        Name: "dns",
+        Description: "DNS",
+        ServiceByTenancyMap: new Map()
+    })
+</script><script>
+    serviceConfigurationMap.set("aws-route53-default", {
+        Name:  null ,
+        Description:  null ,
+        Link:  null ,
+        ImgSrc:  null ,
+        ServiceID: "aws-route53",
+    })
+
+    serviceMap.set("aws-route53", {
+        Name: "Amazon Route 53",
+        Description: "Amazon Route 53 is a highly available and scalable cloud Domain Name System (DNS) web service.",
+        Link: "https://aws.amazon.com/route53/",
+        ImgSrc: "svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDY0ICg5MzUzNykgLSBodHRwczovL3NrZXRjaC5jb20gLS0+CiAgICA8dGl0bGU+SWNvbi1BcmNoaXRlY3R1cmUvMTYvQXJjaF9BbWF6b24tUm91dGUtNTNfMTY8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZGVmcz4KICAgICAgICA8bGluZWFyR3JhZGllbnQgeDE9IjAlIiB5MT0iMTAwJSIgeDI9IjEwMCUiIHkyPSIwJSIgaWQ9ImxpbmVhckdyYWRpZW50LTEiPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjNEQyN0E4IiBvZmZzZXQ9IjAlIj48L3N0b3A+CiAgICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiNBMTY2RkYiIG9mZnNldD0iMTAwJSI+PC9zdG9wPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8ZyBpZD0iSWNvbi1BcmNoaXRlY3R1cmUvMTYvQXJjaF9BbWF6b24tUm91dGUtNTNfMTYiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJJY29uLUFyY2hpdGVjdHVyZS1CRy8xNi9OZXR3b3JraW5nLUNvbnRlbnQtRGVsaXZlcnkiIGZpbGw9InVybCgjbGluZWFyR3JhZGllbnQtMSkiPgogICAgICAgICAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlIiB4PSIwIiB5PSIwIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiPjwvcmVjdD4KICAgICAgICA8L2c+CiAgICAgICAgPHBhdGggZD0iTTE0LjI0MjYxODgsMTIuMTMzMTcxNiBDMTQuNDQ1MDc0LDEyLjMxOTYzNzEgMTQuNTQ3ODEyNCwxMi41NzE2MTc2IDE0LjU0NzgxMjQsMTIuODgyMDU3NCBDMTQuNTQ3ODEyNCwxMy4yMTk3MTEyIDE0LjQyMzkyMTksMTMuNDkzODY1OSAxNC4xODAxNywxMy42OTY0NTgxIEMxMy45Mzg0MzI1LDEzLjg5NjAyNjYgMTMuNjE1MTA4NiwxMy45OTY4MTg3IDEzLjIxNjI0MTcsMTMuOTk2ODE4NyBDMTIuOTA1MDA0NywxMy45OTY4MTg3IDEyLjU5Mjc2MDUsMTMuOTI5Mjg4IDEyLjI4ODU3NDEsMTMuNzk2MjQyMyBMMTIuMjQzMjQ4MywxMy43NzcwOTE4IEwxMi4yNDMyNDgzLDEzLjIzNjg0NTggTDEyLjM0MTk1NzgsMTMuMjY5MDk5MyBDMTMuMDA2NzM1OSwxMy40ODc4MTgzIDEzLjQ5MjIyNTQsMTMuNDkxODUgMTMuNzMyOTU1NiwxMy4yOTIyODE1IEMxMy44NDc3ODA5LDEzLjE5NzUzNjkgMTMuOTAzMTc5MSwxMy4wNjI0NzU0IDEzLjkwMzE3OTEsMTIuODgyMDU3NCBDMTMuOTAzMTc5MSwxMi42NjMzMzg0IDEzLjgzNDY4NjgsMTIuMzczMDU3IDEzLjI0MTQyMjcsMTIuMzczMDU3IEMxMy4wODYzMDc4LDEyLjM3MzA1NyAxMi45MzgyNDM2LDEyLjM4MTEyMDQgMTIuNzkwMTc5NCwxMi4zOTcyNDcxIEwxMi43MDY1Nzg1LDEyLjQwNjMxODQgTDEyLjcwNjU3ODUsMTEuOTcyOTEyMSBMMTMuNjI0MTczNywxMC45NzMwNTM4IEwxMi4yOTE1OTU4LDEwLjk3MzA1MzggTDEyLjI5MTU5NTgsMTAuNDI0NzQ0NSBMMTQuNDA3ODA2MSwxMC40MjQ3NDQ1IEwxNC40MDc4MDYxLDEwLjkxMjU3ODUgTDEzLjUxNTM5MTksMTEuODU3MDAxMSBDMTMuODE1NTQ5MywxMS44NzExMTIgMTQuMDU5MzAxMiwxMS45NjM4NDA4IDE0LjI0MjYxODgsMTIuMTMzMTcxNiBNMTEuNDM5NDcxMiwxMi4wNDk1MTQyIEMxMS42NDk5ODQzLDEyLjI0NjA1ODkgMTEuNzU2NzUxNywxMi41MTkyMDU2IDExLjc1Njc1MTcsMTIuODYyOTA2OSBDMTEuNzU2NzUxNywxMy4xOTk1NTI3IDExLjYzMjg2MTIsMTMuNDc2NzMxMiAxMS4zODgxMDIsMTMuNjg2Mzc4OSBDMTEuMTQ3MzcxNywxMy44OTE5OTQ5IDEwLjgyNjA2MjMsMTMuOTk2ODE4NyAxMC40MzYyNjA2LDEzLjk5NjgxODcgQzEwLjA5ODgzNTQsMTMuOTk2ODE4NyA5Ljc3NzUyNTk3LDEzLjkyOTI4OCA5LjQ4MjQwNDc4LDEzLjc5NjI0MjMgTDkuNDM4MDg2MjQsMTMuNzc2MDgzOSBMOS40MzgwODYyNCwxMy4yMzY4NDU4IEw5LjUzNzgwMjk2LDEzLjI2OTA5OTMgQzEwLjIwNTYwMjgsMTMuNDg0Nzk0NiAxMC43MDMxNzkxLDEzLjQ5NTg4MTcgMTAuOTQ0OTE2NiwxMy4yOTAyNjU3IEMxMS4wNTg3MzQ3LDEzLjE5MzUwNTIgMTEuMTE0MTMyOCwxMy4wNTU0MTk5IDExLjExNDEzMjgsMTIuODY3OTQ2NSBDMTEuMTE0MTMyOCwxMi42NjMzMzg0IDExLjA2MTc1NjQsMTIuNTE1MTczOSAxMC45NTcwMDM1LDEyLjQyNzQ4NDggQzEwLjc2NTYyOCwxMi4yNjcyMjUyIDEwLjM2MTcyNDksMTIuMjYzMTkzNSA5LjY2NjcyOTYyLDEyLjMzODc4NzcgTDkuNTgzMTI4NzQsMTIuMzQ3ODU5IEw5LjU4MzEyODc0LDExLjk0NDY5MDMgTDkuNjgwODMwOTcsMTAuNDI0NzQ0NSBMMTEuNTg4NTQyNywxMC40MjQ3NDQ1IEwxMS41ODg1NDI3LDEwLjk3MzA1MzggTDEwLjIyNzc2MiwxMC45NzMwNTM4IEwxMC4xNzUzODU2LDExLjc4NzQ1NDUgQzEwLjMxOTQyMDgsMTEuNzY0MjcyMyAxMC40NTIzNzY1LDExLjc1MzE4NTIgMTAuNTcxMjMwNywxMS43NTMxODUyIEMxMC45Mzc4NjU5LDExLjc1MzE4NTIgMTEuMjI5OTY1NCwxMS44NTI5Njk0IDExLjQzOTQ3MTIsMTIuMDQ5NTE0MiBNMTQuOTk0MDE5NSwxNS40MjEwMTIgQzEzLjc5NTQwNDUsMTUuNjM2NzA3MiAxMi43Mzg4MTAyLDE2LjEwODQxNDYgMTEuOTk5NDk2NCwxNi41MTQ2MDcgQzExLjI2MTE4OTgsMTYuMTA4NDE0NiAxMC4yMDQ1OTU1LDE1LjYzNjcwNzIgOS4wMDQ5NzMyNSwxNS40MjEwMTIgQzguODEzNTk3NzMsMTUuMzg2NzQyNyA3LjEzMjUxNDk1LDE1LjA2MTE4NCA3LjEzMjUxNDk1LDE0LjI0MTc0MzcgQzcuMTMyNTE0OTUsMTMuODU4NzMzNSA3LjI1NTM5ODE3LDEzLjYxMDc4NDggNy41ODM3NTgyNiwxMy4wNDgzNjQ1IEM3Ljk1ODQ1MTM3LDEyLjQwMTI3ODggOC40NzIxNDM1MywxMS41MTYzMjM2IDguNDcyMTQzNTMsMTAuMjcwNTMyNSBDOC40NzIxNDM1Myw5LjQ5OTQ3MjQyIDguMjk2ODgzODUsOC43NTY2MzQxNyA3Ljk1MDM5MzQ1LDguMDU3MTM2NTYgQzkuMzEzMTg4NTQsOC42MTk1NTY4MyAxMC44MTI5NjgyLDguNTAzNjQ1ODQgMTEuOTk5NDk2NCw3LjgwNjE2NDA3IEMxMy4xODYwMjQ2LDguNTAzNjQ1ODQgMTQuNjg0Nzk3LDguNjE5NTU2ODMgMTYuMDQ5NjA2NSw4LjA1NzEzNjU2IEMxNS43MDMxMTYxLDguNzU2NjM0MTcgMTUuNTI3ODU2NSw5LjQ5OTQ3MjQyIDE1LjUyNzg1NjUsMTAuMjcwNTMyNSBDMTUuNTI3ODU2NSwxMS41MTYzMjM2IDE2LjA0MTU0ODYsMTIuNDAxMjc4OCAxNi40MTYyNDE3LDEzLjA0ODM2NDUgQzE2Ljc0MzU5NDYsMTMuNjEwNzg0OCAxNi44NjY0Nzc4LDEzLjg1ODczMzUgMTYuODY2NDc3OCwxNC4yNDE3NDM3IEMxNi44NjY0Nzc4LDE1LjA2MTE4NCAxNS4xODY0MDIzLDE1LjM4Njc0MjcgMTQuOTk0MDE5NSwxNS40MjEwMTIgTTE2LjUzNTA5NiwxMC4yNzA1MzI1IEMxNi41MzUwOTYsOS41MTQ1OTEyNCAxNi43NDg2MzA4LDguNzg4ODg3NjYgMTcuMTY5NjU2OSw4LjExNTU5NjAxIEMxNy4yODU0ODk1LDcuOTMyMTU0MjggMTcuMjY5MzczNiw3LjY5NjMwMDYxIDE3LjEzMjM4OSw3LjUyODk4NTYyIEwxNi43MzU1MzY3LDcuMDQwMTQzNjMgQzE2LjU4MTQyOSw2Ljg0OTY0NjQ0IDE2LjMxMjQ5NjEsNi43OTkyNTAzNiAxNi4wOTk5Njg1LDYuOTE2MTY5MjcgQzE0LjgwMjY0NCw3LjYzMzgwOTQ3IDEzLjM3NTM4NTYsNy41NDgxMzYxMyAxMi4yODc1NjY5LDYuNzk0MjEwNzUgQzEyLjExNDMyMTcsNi42NzQyNjgwOCAxMS44ODU2NzgzLDYuNjc0MjY4MDggMTEuNzEyNDMzMSw2Ljc5NDIxMDc1IEMxMC42MjQ2MTQ0LDcuNTQ4MTM2MTMgOS4xOTUzNDE1Miw3LjYzMjgwMTU1IDcuOTAwMDMxNDgsNi45MTYxNjkyNyBDNy42ODg1MTExNyw2Ljc5OTI1MDM2IDcuNDE5NTc4MjIsNi44NDk2NDY0NCA3LjI2NDQ2MzMzLDcuMDQwMTQzNjMgTDYuODY3NjEwOTUsNy41Mjg5ODU2MiBDNi43MzA2MjYzOCw3LjY5NjMwMDYxIDYuNzE0NTEwNTQsNy45MzIxNTQyOCA2LjgzMDM0MzA5LDguMTE1NTk2MDEgQzcuMjUxMzY5MjIsOC43ODg4ODc2NiA3LjQ2NDkwNCw5LjUxNDU5MTI0IDcuNDY0OTA0LDEwLjI3MDUzMjUgQzcuNDY0OTA0LDExLjI0NTE5MjcgNy4wNjUwMjk5LDExLjkzNDYxMTEgNi43MTE0ODg4MywxMi41NDEzNzk5IEM2LjM5NzIzMDA5LDEzLjA4MzY0MTcgNi4xMjUyNzU0MiwxMy41NTEzMTc0IDYuMTI1Mjc1NDIsMTQuMjQxNzQzNyBDNi4xMjUyNzU0MiwxNS4yOTgwNDU2IDcuMTM1NTM2NjcsMTYuMTA5NDIyNSA4LjgyNjY5MTg1LDE2LjQxMjgwNjkgQzEwLjAyNjMxNDEsMTYuNjI4NTAyMSAxMS4wNzY4NjUsMTcuMTM4NTEwNSAxMS43NDY2NzkzLDE3LjUyODU3NjIgQzExLjgyNTI0MzksMTcuNTczOTMyNiAxMS45MTI4NzM4LDE3LjU5NzExNDggMTEuOTk5NDk2NCwxNy41OTcxMTQ4IEMxMi4wODcxMjYyLDE3LjU5NzExNDggMTIuMTc0NzU2MSwxNy41NzM5MzI2IDEyLjI1MjMxMzUsMTcuNTI4NTc2MiBDMTIuOTIyMTI3OCwxNy4xMzg1MTA1IDEzLjk3MjY3ODYsMTYuNjI4NTAyMSAxNS4xNzIzMDA5LDE2LjQxMjgwNjkgQzE2Ljg2NDQ2MzMsMTYuMTA5NDIyNSAxNy44NzM3MTczLDE1LjI5ODA0NTYgMTcuODczNzE3MywxNC4yNDE3NDM3IEMxNy44NzM3MTczLDEzLjU1MTMxNzQgMTcuNjAyNzY5OSwxMy4wODM2NDE3IDE3LjI4NzUwMzksMTIuNTQyMzg3OCBDMTYuOTM0OTcwMSwxMS45MzQ2MTExIDE2LjUzNTA5NiwxMS4yNDUxOTI3IDE2LjUzNTA5NiwxMC4yNzA1MzI1IE0xNS41NjgxNDYsMTcuMzczMzU2MiBDMTMuOTU4NTc3MywxNy42NjI2Mjk3IDEyLjU4ODczMTUsMTguNDgzMDc3OSAxMS45OTk0OTY0LDE4Ljg3OTE5MTEgQzExLjQxMDI2MTMsMTguNDgzMDc3OSAxMC4wNDE0MjI3LDE3LjY2MjYyOTcgOC40MzE4NTM5NSwxNy4zNzMzNTYyIEM3LjYyOTA4NDA0LDE3LjIyOTIyMzQgNS4wMDcyMzk1MywxNi41OTAyMDExIDUuMDA3MjM5NTMsMTQuNDM1MjY0NyBDNS4wMDcyMzk1MywxMy41MjYxMTkzIDUuMzU2NzUxNjUsMTIuOTI1Mzk4MSA1LjcyNTQwMTMyLDEyLjI4ODM5MTYgQzYuMDkxMDI5MjcsMTEuNjU3NDMyNiA2LjQ2OTc1MTM0LDExLjAwNTMwNzMgNi40Njk3NTEzNCwxMC4wOTcxNjk5IEM2LjQ2OTc1MTM0LDguODMxMjIwMzcgNS44MTkwNzQ2LDcuODk1ODY5MSA1LjM4OTk5MDU2LDcuNDE4MTE0MjQgQzUuODAxOTUxNTMsNi45MTcxNzcxOSA2LjU1MjM0NDk4LDUuOTk5OTY4NSA3LjAzMTc5MSw1LjM5MTE4Mzg0IEM3Ljc4OTIzNTEzLDYuMDQwMjg1MzcgOC42NTI0Mzk0MSw2LjM5MjA1MDAyIDkuNTA5NjAwMjUsNi4zOTIwNTAwMiBDMTAuNDcwNTA2OCw2LjM5MjA1MDAyIDExLjI3NDI4MzksNi4wMzIyMjE5OSAxMS45OTk0OTY0LDUuMjcwMjMzMjQgQzEyLjcyNTcxNjEsNi4wMzIyMjE5OSAxMy41Mjk0OTMyLDYuMzkyMDUwMDIgMTQuNDkwMzk5Nyw2LjM5MjA1MDAyIEMxNS4zNDc1NjA2LDYuMzkyMDUwMDIgMTYuMjEwNzY0OSw2LjA0MDI4NTM3IDE2Ljk2ODIwOSw1LjM5MTE4Mzg0IEMxNy40NDc2NTUsNS45OTk5Njg1IDE4LjE5ODA0ODUsNi45MTcxNzcxOSAxOC42MTAwMDk0LDcuNDE4MTE0MjQgQzE4LjE4MDkyNTQsNy44OTU4NjkxIDE3LjUzMDI0ODcsOC44MzEyMjAzNyAxNy41MzAyNDg3LDEwLjA5NzE2OTkgQzE3LjUzMDI0ODcsMTEuMDA1MzA3MyAxNy45MDg5NzA3LDExLjY1NzQzMjYgMTguMjc0NTk4NywxMi4yODgzOTE2IEMxOC42NDMyNDgzLDEyLjkyNTM5ODEgMTguOTkyNzYwNSwxMy41MjYxMTkzIDE4Ljk5Mjc2MDUsMTQuNDM1MjY0NyBDMTguOTkyNzYwNSwxNi41OTAyMDExIDE2LjM3MDkxNiwxNy4yMjkyMjM0IDE1LjU2ODE0NiwxNy4zNzMzNTYyIE0xOS4xNDQ4NTM2LDExLjc4MjQxNDkgQzE4LjgxOTUxNTMsMTEuMjE5OTk0NiAxOC41Mzc0ODgyLDEwLjczNDE3NjQgMTguNTM3NDg4MiwxMC4wOTcxNjk5IEMxOC41Mzc0ODgyLDguNzQxNTE1MzUgMTkuNTk4MTExNCw3Ljg1MjUyODQ3IDE5LjYwNzE3NjYsNy44NDU0NzMwMSBDMTkuNzExOTI5NSw3Ljc2MDgwNzYgMTkuNzc4NDA3Myw3LjYzNzg0MTE2IDE5Ljc5MTUwMTQsNy41MDM3ODc1OCBDMTkuODA0NTk1NSw3LjM2OTczNCAxOS43NjQzMDU5LDcuMjM2Njg4MzUgMTkuNjc4NjkwNiw3LjEzMjg3MjQyIEMxOS42NjA1NjAzLDcuMTEwNjk4MTQgMTcuODQ0NTA3NCw0LjkwOTM5NzI5IDE3LjQzMjU0NjQsNC4zNDI5NDUzNCBDMTcuMzQzOTA5Myw0LjIyMDk4NjgyIDE3LjIwNTkxNzUsNC4xNDUzOTI3IDE3LjA1NTgzODgsNC4xMzYzMjE0IEMxNi45MTM4MTgxLDQuMTMwMjczODcgMTYuNzU5NzEwNCw0LjE4NTcwOTU2IDE2LjY1Njk3Miw0LjI5NDU2NTEgQzE2LjAwMDI1MTgsNC45OTcwODY0OCAxNS4yMzA3MjA4LDUuMzg0MTI4MzggMTQuNDkwMzk5Nyw1LjM4NDEyODM4IEMxMy42Njc0ODUsNS4zODQxMjgzOCAxMy4wNDE5ODkzLDUuMDI2MzE2MiAxMi4zOTkzNzA1LDQuMTg2NzE3NDggQzEyLjIxMDAwOTQsMy45Mzc3NjA4NCAxMS43ODg5ODMzLDMuOTM3NzYwODQgMTEuNjAwNjI5NSw0LjE4NjcxNzQ4IEMxMC45NTgwMTA3LDUuMDI2MzE2MiAxMC4zMzI1MTUsNS4zODQxMjgzOCA5LjUwOTYwMDI1LDUuMzg0MTI4MzggQzguNzY4MjcxOTUsNS4zODQxMjgzOCA3Ljk5OTc0ODE5LDQuOTk3MDg2NDggNy4zNDIwMjA3Nyw0LjI5NDU2NTEgQzcuMjQwMjg5NTgsNC4xODU3MDk1NiA3LjA5NzI2MTU3LDQuMTMxMjgxNzkgNi45NDQxNjExNiw0LjEzNjMyMTQgQzYuNzkzMDc1MjMsNC4xNDUzOTI3IDYuNjU2MDkwNjUsNC4yMjA5ODY4MiA2LjU2NzQ1MzU3LDQuMzQyOTQ1MzQgQzYuMTU1NDkyNiw0LjkwOTM5NzI5IDQuMzM5NDM5NzIsNy4xMTA2OTgxNCA0LjMyMDMwMjE3LDcuMTMyODcyNDIgQzQuMjM0Njg2ODEsNy4yMzY2ODgzNSA0LjE5NDM5NzIzLDcuMzY5NzM0IDQuMjA4NDk4NTgsNy41MDM3ODc1OCBDNC4yMjE1OTI3LDcuNjM3ODQxMTYgNC4yODgwNzA1MSw3Ljc2MDgwNzYgNC4zOTI4MjM0Miw3Ljg0NTQ3MzAxIEM0LjQwMjg5NTgxLDcuODUzNTM2MzkgNS40NjI1MTE4LDguNzI2Mzk2NTIgNS40NjI1MTE4LDEwLjA5NzE2OTkgQzUuNDYyNTExOCwxMC43MzQxNzY0IDUuMTgwNDg0NzMsMTEuMjE5OTk0NiA0Ljg1NTE0NjM2LDExLjc4MjQxNDkgQzQuNDUzMjU3NzksMTIuNDcyODQxMiA0LDEzLjI1NDk4ODQgNCwxNC40MzUyNjQ3IEM0LDE2LjQxNjgzODYgNS41OTA0MzEyMiwxNy44ODYzODgzIDguMjU0NTc5NzksMTguMzY2MTU5IEMxMC4xMTM5NDQsMTguNjk5NzgxMSAxMS42NzgxODcsMTkuODg0MDg5IDExLjY5MzI5NTYsMTkuODk2MTg0MSBDMTEuNzgzOTQ3MSwxOS45NjU3MzA3IDExLjg5MTcyMTgsMjAgMTEuOTk5NDk2NCwyMCBDMTIuMTA4Mjc4MiwyMCAxMi4yMTYwNTI5LDE5Ljk2NTczMDcgMTIuMzA2NzA0NCwxOS44OTYxODQxIEMxMi4zMjI4MjAzLDE5Ljg4NDA4OSAxMy44NzY5OTA5LDE4LjcwMTc5NjkgMTUuNzQ2NDI3NCwxOC4zNjYxNTkgQzE4LjQwOTU2ODgsMTcuODg2Mzg4MyAyMCwxNi40MTY4Mzg2IDIwLDE0LjQzNTI2NDcgQzIwLDEzLjI1NDk4ODQgMTkuNTQ2NzQyMiwxMi40NzI4NDEyIDE5LjE0NDg1MzYsMTEuNzgyNDE0OSIgaWQ9IkFtYXpvbi1Sb3V0ZS01My1JY29uXzE2X1NxdWlkIiBmaWxsPSIjRkZGRkZGIj48L3BhdGg+CiAgICA8L2c+Cjwvc3ZnPg==",
+        ProviderID: "aws",
+        TenancyID: "managed",
+    })
+
+    serviceProviderMap.set("aws", {
+        Name: "AWS",
+    })
+
+    serviceTenancyMap.set("managed", {
+        Name: "Managed",
+        BackgroundColour: "SlateBlue",
+        FontColour: "White",
+    })
+
+
+    serviceCapabilityMap.get("networking").CategoryMap.get("dns").SubcategoryMap.get("dns").ServiceByTenancyMap.set("aws", {
+        ServiceConfigurationID: "aws-route53-default"
     });
 </script>
 
@@ -2090,96 +2444,6 @@
 
     serviceCapabilityMap.get("networking").CategoryMap.get("content-delivery-network").SubcategoryMap.get("content-delivery-network").ServiceByTenancyMap.set("aws", {
         ServiceConfigurationID: "aws-cloudfront-default"
-    });
-</script>
-
-
-
-
-
-
-
-
-
-<script>
-    serviceCapabilityMap.get("networking").CategoryMap.set("vpn", {
-        Name: "vpn",
-        Description: "VPN",
-        SubcategoryMap: new Map(),
-    })
-</script><script>
-    serviceCapabilityMap.get("networking").CategoryMap.get("vpn").SubcategoryMap.set("vpn-gateway", {
-        Name: "vpn gateway",
-        Description: "VPN Gateway",
-        ServiceByTenancyMap: new Map()
-    })
-</script><script>
-    serviceConfigurationMap.set("azure-vpn-gateway-default", {
-        Name:  null ,
-        Description:  null ,
-        Link:  null ,
-        ImgSrc:  null ,
-        ServiceID: "azure-vpn-gateway",
-    })
-
-    serviceMap.set("azure-vpn-gateway", {
-        Name: "VPN Gateway",
-        Description: "Azure VPN Gateway",
-        Link: "https://azure.microsoft.com/en-gb/services/vpn-gateway/",
-        ImgSrc:  null ,
-        ProviderID: "azure",
-        TenancyID: "managed",
-    })
-
-    serviceProviderMap.set("azure", {
-        Name: "Azure",
-    })
-
-    serviceTenancyMap.set("managed", {
-        Name: "Managed",
-        BackgroundColour: "SlateBlue",
-        FontColour: "White",
-    })
-
-
-    serviceCapabilityMap.get("networking").CategoryMap.get("vpn").SubcategoryMap.get("vpn-gateway").ServiceByTenancyMap.set("azure", {
-        ServiceConfigurationID: "azure-vpn-gateway-default"
-    });
-</script>
-
-
-
-<script>
-    serviceConfigurationMap.set("aws-site-to-site-vpn-default", {
-        Name:  null ,
-        Description:  null ,
-        Link:  null ,
-        ImgSrc:  null ,
-        ServiceID: "aws-site-to-site-vpn",
-    })
-
-    serviceMap.set("aws-site-to-site-vpn", {
-        Name: "AWS Site-to-Site VPN",
-        Description: "AWS Site-to-Site VPN is a fully-managed service that creates a secure connection between your data center or branch office and your AWS resources using IP Security (IPSec) tunnels.",
-        Link: "https://aws.amazon.com/vpn/site-to-site-vpn/",
-        ImgSrc: "svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8dGl0bGU+SWNvbi1BcmNoaXRlY3R1cmUvMTYvQXJjaF9BV1MtU2l0ZS10by1TaXRlLVZQTl8xNjwvdGl0bGU+CiAgICA8ZGVmcz4KICAgICAgICA8bGluZWFyR3JhZGllbnQgeDE9IjAlIiB5MT0iMTAwJSIgeDI9IjEwMCUiIHkyPSIwJSIgaWQ9ImxpbmVhckdyYWRpZW50LTEiPgogICAgICAgICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjNEQyN0E4IiBvZmZzZXQ9IjAlIj48L3N0b3A+CiAgICAgICAgICAgIDxzdG9wIHN0b3AtY29sb3I9IiNBMTY2RkYiIG9mZnNldD0iMTAwJSI+PC9zdG9wPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8L2RlZnM+CiAgICA8ZyBpZD0iSWNvbi1BcmNoaXRlY3R1cmUvMTYvQXJjaF9BV1MtU2l0ZS10by1TaXRlLVZQTl8xNiIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9IlJlY3RhbmdsZSIgZmlsbD0idXJsKCNsaW5lYXJHcmFkaWVudC0xKSI+CiAgICAgICAgICAgIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PC9yZWN0PgogICAgICAgIDwvZz4KICAgICAgICA8ZyBpZD0iSWNvbi1TZXJ2aWNlLzE2L0FXUy1TaXRlLXRvLVNpdGUtVlBOXzE2IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0LjAwMDAwMCwgNC4wMDAwMDApIiBmaWxsPSIjRkZGRkZGIj4KICAgICAgICAgICAgPHBhdGggZD0iTTUuMDA3LDQgTDQuMDA3LDQgQzQuMDA3LDEuNzk0IDUuODAxLDAgOC4wMDcsMCBDMTAuMjEzLDAgMTIuMDA3LDEuNzk0IDEyLjAwNyw0IEwxMS4wMDcsNCBDMTEuMDA3LDIuMzQ2IDkuNjYxLDEgOC4wMDcsMSBDNi4zNTMsMSA1LjAwNywyLjM0NiA1LjAwNyw0IEw1LjAwNyw0IFogTTIuNjUzLDcuODU0IEwwLjMsNS41IEwyLjY1MywzLjE0NiBMMy4zNjEsMy44NTQgTDIuMjE0LDUgTDEzLjgsNSBMMTIuNjUzLDMuODU0IEwxMy4zNjEsMy4xNDYgTDE1LjcxNCw1LjUgTDEzLjM2MSw3Ljg1NCBMMTIuNjUzLDcuMTQ2IEwxMy44LDYgTDIuMjE0LDYgTDMuMzYxLDcuMTQ2IEwyLjY1Myw3Ljg1NCBaIE0zLjAwNywxNSBMMTMuMDA3LDE1IEwxMy4wMDcsMTAgTDMuMDA3LDEwIEwzLjAwNywxNSBaIE0xMy41MDcsOSBMMTIuMDA3LDkgTDEyLjAwNyw3IEwxMS4wMDcsNyBMMTEuMDA3LDkgTDUuMDA3LDkgTDUuMDA3LDcgTDQuMDA3LDcgTDQuMDA3LDkgTDIuNTA3LDkgQzIuMjMxLDkgMi4wMDcsOS4yMjQgMi4wMDcsOS41IEwyLjAwNywxNS41IEMyLjAwNywxNS43NzYgMi4yMzEsMTYgMi41MDcsMTYgTDEzLjUwNywxNiBDMTMuNzgzLDE2IDE0LjAwNywxNS43NzYgMTQuMDA3LDE1LjUgTDE0LjAwNyw5LjUgQzE0LjAwNyw5LjIyNCAxMy43ODMsOSAxMy41MDcsOSBMMTMuNTA3LDkgWiIgaWQ9IkFXUy1TaXRlLXRvLVNpdGUtVlBOXzE2X1NxdWlkIj48L3BhdGg+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=",
-        ProviderID: "aws",
-        TenancyID: "managed",
-    })
-
-    serviceProviderMap.set("aws", {
-        Name: "AWS",
-    })
-
-    serviceTenancyMap.set("managed", {
-        Name: "Managed",
-        BackgroundColour: "SlateBlue",
-        FontColour: "White",
-    })
-
-
-    serviceCapabilityMap.get("networking").CategoryMap.get("vpn").SubcategoryMap.get("vpn-gateway").ServiceByTenancyMap.set("aws", {
-        ServiceConfigurationID: "aws-site-to-site-vpn-default"
     });
 </script>
 
