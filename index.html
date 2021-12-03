@@ -2111,13 +2111,13 @@
 </script>
 
 <script>
-    serviceCapabilityMap.get("database").CategoryMap.set("document-dbms", {
-        Name: "document dbms",
-        Description: "Document Database Management Service",
+    serviceCapabilityMap.get("database").CategoryMap.set("no-sql", {
+        Name: "noSQL",
+        Description: "noSQL Database Management Service",
         SubcategoryMap: new Map(),
     })
 </script><script>
-    serviceCapabilityMap.get("database").CategoryMap.get("document-dbms").SubcategoryMap.set("document-dbms", {
+    serviceCapabilityMap.get("database").CategoryMap.get("no-sql").SubcategoryMap.set("document-dbms", {
         Name: "document dbms",
         Description: "Document Database Management Service",
         ServiceByTenancyMap: new Map()
@@ -2151,7 +2151,7 @@
     })
 
 
-    tm = serviceCapabilityMap.get("database").CategoryMap.get("document-dbms").SubcategoryMap.get("document-dbms").ServiceByTenancyMap
+    tm = serviceCapabilityMap.get("database").CategoryMap.get("no-sql").SubcategoryMap.get("document-dbms").ServiceByTenancyMap
     if (tm.get("aws") === undefined ) {
         tm.set("aws", new Map())
     }
@@ -2162,23 +2162,13 @@
 
 
 </script>
-
-
-
-
 
 
 
 
 
 <script>
-    serviceCapabilityMap.get("database").CategoryMap.set("key-value-dbms", {
-        Name: "key/value dbms",
-        Description: "Key/Value Database Management Service",
-        SubcategoryMap: new Map(),
-    })
-</script><script>
-    serviceCapabilityMap.get("database").CategoryMap.get("key-value-dbms").SubcategoryMap.set("key-value-dbms", {
+    serviceCapabilityMap.get("database").CategoryMap.get("no-sql").SubcategoryMap.set("key-value-dbms", {
         Name: "key/value dbms",
         Description: "Key/Value Database Management Service",
         ServiceByTenancyMap: new Map()
@@ -2212,7 +2202,7 @@
     })
 
 
-    tm = serviceCapabilityMap.get("database").CategoryMap.get("key-value-dbms").SubcategoryMap.get("key-value-dbms").ServiceByTenancyMap
+    tm = serviceCapabilityMap.get("database").CategoryMap.get("no-sql").SubcategoryMap.get("key-value-dbms").ServiceByTenancyMap
     if (tm.get("aws") === undefined ) {
         tm.set("aws", new Map())
     }
@@ -2227,6 +2217,22 @@
 
 
 
+
+<script>
+    serviceCapabilityMap.get("database").CategoryMap.get("no-sql").SubcategoryMap.set("tabular-dbms", {
+        Name: "tabular dbms",
+        Description: "Tabular Database Management Service",
+        ServiceByTenancyMap: new Map()
+    })
+</script>
+
+<script>
+    serviceCapabilityMap.get("database").CategoryMap.get("no-sql").SubcategoryMap.set("graph-dbms", {
+        Name: "graph dbms",
+        Description: "Graph Database Management Service",
+        ServiceByTenancyMap: new Map()
+    })
+</script>
 
 
 
